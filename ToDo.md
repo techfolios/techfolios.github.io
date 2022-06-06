@@ -3,9 +3,6 @@
 * Update documentation
 * V1 to V2 migration guide
 
-* Slowly add images
-  * Update static/img with images from Desktop, starting with config-
-
 Misc:
 * generate alternative CV format
 * Fix OG values

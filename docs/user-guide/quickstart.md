@@ -6,7 +6,6 @@ title: Quick Start
 I am actively working on these instructions. I anticipate completing them around June 12, 2022. Please check back then!
 :::
 
-
 This Quick Start is intended to provide the minimum of information necessary to produce your first draft of a professional portfolio. 
 
 ## Initial setup 
@@ -39,11 +38,9 @@ Click the `Use this template` button. Select your account as the "Owner", and sp
 
 ![](/img/quickstart/create-repository.png)
 
-
 Then press the `Create repository from template` button. GitHub will make a new copy of the template in your account and display a page like this:
 
 ![](/img/quickstart/template-copy.png)
-
 
 :::warning Verify your repository name
 Make sure the repository name is correct. As you can see in this example, since my GitHub username is "philipmjohnson", the repository name must be "philipmjohnson.github.io". If the first part of the repository name does not match your GitHub username exactly, then you need to rename your repository right now to make it match. Click on the Settings link to rename your repo, it's easy to fix. 
@@ -52,7 +49,6 @@ Make sure the repository name is correct. As you can see in this example, since 
 Now let's fix the "About" section to link to your portfolio. Click on the gear icon next to the "About" label, which brings up a dialog box. Add "Professional Portfolio" as the description, add "https://USERNAME.github.io" (where USERNAME is our username) as the website, and (if you want) add "professional-portfolio" as a topic.  The result should look like this:
 
 ![](/img/quickstart/about-dialog.png)
-
 
 After saving the changes, you'll have a convenient link to your professional portfolio on the home page for this repo.
 
@@ -64,21 +60,18 @@ Scroll down the repository home page until you find the file named "_config.yml"
 
 ![](/img/quickstart/config-yml.png)
 
-
 Click the pencil icon on the right hand side to edit the file:
 
 ![](/img/quickstart/config-yml-edit1.png)
-
 
 The first section of the file, "Required Changes", contains the three lines you have to change.
 Edit `title:` to specify your own name, edit `url:` to specify your portfolio, and edit `baseurl:` to be the empty string. When you're done editing, that section of _config.yml should look similar to this:
 
 ![](/img/quickstart/config-yml-edit2.png)
 
-
 Scroll to the bottom of this page and click "Commit changes" to save these changes.
 
-### Monitor the initial build
+### Monitor the build
 
 Every time you commit a change to your portfolio, GitHub will attempt to build and deploy your revised portfolio. It does this through a technology called [GitHub Actions](https://docs.github.com/en/actions).  In fact, GitHub is trying to build a new version of your portfolio right now.  Let's watch.
 
@@ -86,28 +79,23 @@ First, click on the "Actions" label on the home page of your repository.  That w
 
 ![](/img/quickstart/actions-page.png)
 
-
 This page indicates that two GitHub Actions (i.e. "workflows") named "pages-build-deployment" have previously run and completed successfully (indicated by the green checkmarks).  There is a workflow called "Jekyll Deploy" that is running right now (indicated by the yellow dot).  GitHub labels this workflow execution instance using the commit message associated with the change to the repository that triggered the Action. In this case, it was "Update _config.yml". 
 
 You can watch the build in more detail by clicking on the "Update _config.yml" line, which takes you to a page like this:
 
 ![](/img/quickstart/actions-page2.png)
 
-
 Clicking on the "build_and_deploy" label takes you to a page that shows the actual progress through the build:
 
 ![](/img/quickstart/actions-page3.png)
-
 
 Finally, you can click on the arrow next to any build step and see what happened during it:
 
 ![](/img/quickstart/actions-page4.png)
 
-
 After a few minutes, the Jekyll Deploy workflow will complete and the Actions page will look like this:
 
 ![](/img/quickstart/actions-page6.png)
-
 
 Notice that there is a green checkmark beside the "Update _config.yml" workflow run, indicating that it has completed successfully.
 
@@ -120,27 +108,23 @@ There are two reasons it is useful to know how to monitor the build:
 Also, please note that the very first time you try to build your portfolio, it takes about five minutes, which is a long time!  Don't worry, though: after this very first build, GitHub will cache the build artifacts and your future builds should take less than a minute to complete.
 :::
 
-### Specify gh\_pages as the pages branch
+### Set gh\_pages 
 
 The above build process has created a new branch in your repo called "gh_pages".  Now you need to tell the GitHub Pages mechanism that this is where to look for your professional portfolio files. To do this, click on the "Settings" tab, and then on the "Pages" tab. This will take you to the following page:
 
 ![](/img/quickstart/pages-tab.png)
 
-
 Click on the button named "Branch: main", and select "gh-pages", then click "Save". The page should now look like this:
 
 ![](/img/quickstart/pages-tab2.png)
-
 
 Now click on the "Actions" tab and you'll notice that changing the branch from main to gh-pages has resulted in a new workflow run called "pages build and deployment":
 
 ![](/img/quickstart/pages-workflow-run.png)
 
-
 This run only took 36 seconds, so it completed by the time I switched to this tab. If you click on this workflow run, you'll see a page like this:
 
 ![](/img/quickstart/pages-workflow-run2.png)
-
 
 ### View your portfolio
 
@@ -148,16 +132,15 @@ As you can see, this page has a link to your professional portfolio.  Click on i
 
 ![](/img/quickstart/initial-portfolio.png)
 
-
 Congratulations!
 
-## Configure bio.json, part 1
+## Configure bio.json
 
 OK, I understand if you are a bit disappointed right now---unless you are Molly Maluhia, that portfolio doesn't look like you at all!  
 
 The good news is that you've finished the "initial setup" for your TechFolio, and now you can start learning how to customize it to reflect your accomplishments over time. 
 
-### Create a headshot URL
+### Create a headshot
 
 The default TechFolio layout requires a square image to be used as the "head shot".  So, take a moment right now to look through your photos to find a picture that you want to use as the head shot. 
 
@@ -167,21 +150,17 @@ To do this, go to your account page and then move your mouse over the head shot 
 
 ![](/img/quickstart/change-avatar.png)
 
-
 Click on the image to bring up a page where you can edit your profile picture:
 
 ![](/img/quickstart/change-avatar2.png)
-
 
 Click on the "Edit" link and select "Upload a photo...".  Select the file from your computer with your headshot image. GitHub will then display a dialog that enables you to crop and center your head shot:
 
 ![](/img/quickstart/change-avatar3.png)
 
-
 When you have finished the upload process, GitHub will provide a link to your profile picture as "https://github.com/USERNAME.png", where USERNAME is your GitHub username.  For example, here's "https://github.com/philipmjohnson.png":
 
 ![](/img/quickstart/change-avatar4.png)
-
 
 (Note that GitHub will redirect this URL to a different, more complicated URL, but you can always use the simple one).
 
@@ -193,26 +172,21 @@ To configure the name, head shot, and other basic information that appears in yo
 
 ![](/img/quickstart/bio-json1.png)
 
-
 Click on bio.json to get to this page:
 
 ![](/img/quickstart/bio-json2.png)
-
 
 Now click the pencil icon to edit this file within your browser:
 
 ![](/img/quickstart/bio-json3.png)
 
-
 Notice the dropdown that currently specifies "No wrap".  That's irritating, because certain lines (like the summary line) run right off the right side of the browser window.  To fix this, press that dropdown and select "Soft wrap" instead. This way you can see the entire contents of each line within your browser without horizontal scrolling:
 
 ![](/img/quickstart/bio-json4.png)
 
-
 OK, now go ahead and edit the "basics" section and the "interests" section to provide your own information. Here's what I did:
 
 ![](/img/quickstart/bio-json5.png)
-
 
 :::warning No commas at the end of a section!
 There is one tricky thing you need to know when editing this file.  Because it's a "json" file, you have to observe some strict syntax rules.  In particular, the lines between the square brackets have to be separated by commas, **except for the last line, which cannot have a comma.**  Because I deleted the Twitter and Instagram lines in the "profiles" section, as well as one of the interests in the Interests section, I needed to make sure that the last line in each of those sections did not have a comma. The red boxes in the image above shows the last lines of those sections and how they do not have a comma.
@@ -224,16 +198,13 @@ After making your changes to the "basics" and "interests" section of bio.json, t
 
 ![](/img/quickstart/bio-json7.png)
 
-
 In addition, since you committed a change to your repo, GitHub will start a new build of your portfolio.  Click on the Actions tab to see:
 
 ![](/img/quickstart/bio-json8.png)
 
-
 As before, you can click into the workflow to see what's happening. In this case, the most important workflow item to check is the one called "validate-bio-json-file":
 
 ![](/img/quickstart/bio-json9.png)
-
 
 This task checks the syntax of your bio.json file. As you can see, in this case, it did not find any errors. 
 
@@ -245,7 +216,6 @@ If the "Update bio.json" action completes successfully, then new files will be w
 
 ![](/img/quickstart/bio-json10.png)
 
-
 Once it completes, your portfolio is ready to be viewed again. Here's what mine looks like now:
 
 ![](/img/quickstart/bio-json11.png)
@@ -254,7 +224,20 @@ Now we're getting somewhere!  As you can see, the first part of the page should 
 
 ## Configure projects
 
-Let's look at projects. Projects are cool. Super cool.
+The template comes with three sample projects: Vacay, Micromouse, and Cotton:
+
+![](/img/quickstart/default-projects.png)
+
+To define a project in TechFolios, you create a file in the projects/ directory.  So, in the template/projects directory, there are three files, one for each project:
+
+![](/img/quickstart/projects-dir.png)
+
+Projects are implemented using a format called [GitHub Flavored Markdown](https://github.github.com/gfm/), and project files should have the extension ".md" to indicate they are in this format. If you click on the cotton.md file, GitHub will display the page like this:
+
+![](/img/quickstart/cotton-file-display.png)
+
+I personally find this display quite confusing. Click on the "Raw" button to see what the file contents actually look like:
+
 
 ## Configure essays
 
