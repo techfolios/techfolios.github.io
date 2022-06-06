@@ -224,6 +224,8 @@ Now we're getting somewhere!  As you can see, the first part of the page should 
 
 ## Configure projects
 
+### The default projects
+
 The template comes with three sample projects: Vacay, Micromouse, and Cotton:
 
 ![](/img/quickstart/default-projects.png)
@@ -238,6 +240,46 @@ Projects are implemented using a format called [GitHub Flavored Markdown](https:
 
 I personally find this display quite confusing. Click on the "Raw" button to see what the file contents actually look like:
 
+![](/img/quickstart/cotton-file-display-raw.png)
+
+### Project front matter
+
+There are two parts to a project file.  The first part is called the "front matter". Every project file must have front matter, which is at the top of the file and delineated by three dashes. In the case of cotton.md, the front matter is:
+
+```
+---
+layout: project
+type: project
+image: img/cotton/cotton-square.png
+title: "Cotton"
+# All dates must be YYYY-MM-DD format!
+date: 2014-04-12
+published: true
+labels:
+  - Lisp
+  - GitHub
+summary: A text adventure game I developed for ICS 313.
+---
+```
+
+Here's a little bit about each of these fields:
+
+| Field  | Description                                                                                                                                      |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| layout | For projects, must be "project"                                                                                                                  |
+| type   | For projects, must be "project"                                                                                                                  |
+| image  | The path to the file containing an image to be displayed on your TechFolio home page with the project. We highly recommend that you crop this image to be a square. |
+| title  | The title of your project. It's best to always put your title in quotation marks.                                                                |
+| date   | The date associated with your project, in YYYY-MM-DD format. TechFolios uses this field to display your projects in reverse chronological order. |
+| published | A boolean, either "true" or "false". You can set this to false to prevent TechFolios from presenting this project file in your portfolio. This is useful if you want to keep one of the default project files in your repo as an example, but not actually publish it as part of your portfolio. |
+| labels | An indented list of strings that show up as labels in the project description. |
+| summary | One or two sentences that summarize your project. It's best to always put the summary in quotation marks. |
+
+### Project body
+
+Following the front matter is the project body. A formatted version of the project body appears when you click the "Read More" button on the home page for a specific project. In the case of the Cotton project, the following page appears:
+
+![](/img/quickstart/cotton-page-body.png)
 
 ## Configure essays
 
