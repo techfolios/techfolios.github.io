@@ -14,7 +14,7 @@ The following initialization tasks are "one time only".
 
 ### Join GitHub
 
-To get started with TechFolios, you need is an account at GitHub. You don't need to download any software or even know how to use git. Everything you need to do for this Quick Start can be done in a browser.
+To get started with TechFolios, all you need is an account at GitHub. You don't need to download any software or even know how to use git. Everything you need to do for this Quick Start can be done in a browser.
 
 If you haven't already, [sign up for GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account) and [verify your email address](https://help.github.com/articles/verifying-your-email-address/). Choose your username wisely, as that will become part of the URL to your portfolio site.
 
@@ -264,16 +264,16 @@ summary: A text adventure game I developed for ICS 313.
 
 Here's a little bit about each of these fields:
 
-| Field  | Description                                                                                                                                      |
-|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| layout | For projects, must be "project"                                                                                                                  |
-| type   | For projects, must be "project"                                                                                                                  |
-| image  | The path to the file containing an image to be displayed on your TechFolio home page with the project. We highly recommend that you crop this image to be a square. |
-| title  | The title of your project. It's best to always put your title in quotation marks.                                                                |
-| date   | The date associated with your project, in YYYY-MM-DD format. TechFolios uses this field to display your projects in reverse chronological order. |
-| published | A boolean, either "true" or "false". You can set this to false to prevent TechFolios from presenting this project file in your portfolio. This is useful if you want to keep one of the default project files in your repo as an example, but not actually publish it as part of your portfolio. |
-| labels | An indented list of strings that show up as labels in the project description. |
-| summary | One or two sentences that summarize your project. It's best to always put the summary in quotation marks. |
+| Field      | Description                                                                                                                                      |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| layout:    | For projects, must be "project"                                                                                                                  |
+| type:      | For projects, must be "project"                                                                                                                  |
+| image:     | The path to the file containing an image to be displayed on your TechFolio home page with the project. We highly recommend that you crop this image to be a square. |
+| title:     | The title of your project. It's best to always put your title in quotation marks.                                                                |
+| date:      | The date associated with your project, in YYYY-MM-DD format. TechFolios uses this field to display your projects in reverse chronological order. |
+| published: | A boolean, either "true" or "false". You can set this to false to prevent TechFolios from presenting this project file in your portfolio. This is useful if you want to keep one of the default project files in your repo as an example, but not actually publish it as part of your portfolio. |
+| labels:    | An indented list of strings that show up as labels in the project description. |
+| summary:   | One or two sentences that summarize your project. It's best to always put the summary in quotation marks. |
 
 ### Project body
 
