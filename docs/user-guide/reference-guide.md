@@ -308,9 +308,8 @@ There are two simple steps to take: (1) validate your file against the JSON Resu
 
 First, you can try cutting and pasting your bio.json file contents into [JSON Schema Validator](http://www.jsonschemavalidator.net/). Here's what the result of running it looks like:
 
-import Image from '@theme/IdealImage';
 
-<Image img={require('../../static/img/user-guide/jsonschemavalidator.png')} />
+![](/img/user-guide/jsonschemavalidator.png)
 
 Note that the validator can signal errors related to certain "date" fields. This is OK for TechFolios; our themes try to do the right thing when "Present" is provided as a date string.
 
@@ -320,16 +319,15 @@ However, if any other kinds of errors are signalled, then this indicates a poten
 
 Once your bio.json file is found to be valid against the JSONResume schema, the next step is to see if Jekyll can process it correctly. To do so, you can use [YAML Lint](http://www.yamllint.com/).  Paste your bio.json file into the text field and see if errors occur. Here's what the page looks like right after pasting in a bio.json file:
 
-<Image img={require('../../static/img/user-guide/yamllint-1.png')} />
+![](/img/user-guide/yamllint-1.png)
 
 Here's what happens after pressing "go"--the JSON is converted to YAML, and the page provides a green bar if no errors occurred:
 
-<Image img={require('../../static/img/user-guide/yamllint-2.png')} />
-
+![](/img/user-guide/yamllint-2.png)
 
 Let's say you forgot a comma when editing your social network entries. Here's what YAML Lint might produce:
 
-<Image img={require('../../static/img/user-guide/yamllint-3.png')} />
+![](/img/user-guide/yamllint-3.png)
 
 YAML Lint will indicate an error and the top-level section in which the error occurred ("profiles"). It won't always tell you the exact line but hopefully the error message will give you enough information to track down the error.
 
@@ -357,7 +355,7 @@ Once your bio.json file passes both JSON Schema and YAML Lint, it should build w
 
 The template techfolio comes with default handling when users request an URL not associated with the site (i.e. 404 errors). The default response (see the top-level [404.md](https://github.com/techfolios/template/blob/master/404.md) file and the [missingpage.html template](https://github.com/techfolios/template/blob/master/_layouts/missingpage.html)) is to indicate that the URL was not found and provide a list of links to all projects and essays. For example:
 
-<Image img={require('../../static/img/user-guide/techfolio-missing-page.png')} />
+![](/img/user-guide/techfolio-missing-page.png)
 
 This is helpful if you are transitioning to TechFolio from another professional portfolio site and worry that others might have bookmarked URLs that will no longer point correctly to your updated essay and project pages.
 
@@ -494,15 +492,11 @@ You can do the same thing. Just make sure you don't make changes that break eith
 
 If your site does not display at all, or does not publish your updates within a minute or so, then it is likely that you have introduced an error in your TechFolio setup.  To find out, go to your TechFolio GitHub repository in your browser and click on the Settings link, then scroll down to the "GitHub Pages" section.  If there was an error building your site, GitHub will sometimes indicate it there. Here is an example of an error due to a missing comma in my bio.json file:
 
-<Image img={require('../../static/img/user-guide/techfolio-build-error.png')} />
-
 Other times, GitHub does not indicate an error, and instead your project or essay simply fails to appear in your site. In this case, the following tips might help you figure out what to do:
 
 ### 9.1 Site doesn't display: Poorly formatted Molly Maluhia instead
 
 Sometimes you might find that when you are trying to get your portfolio up for the first time, the page looks like this even through you've made changes to the config.yml and other files:
-
-<Image img={require('../../static/img/user-guide/molly-maluhia-gh-pages-build-problem.png')} />
 
 If your portfolio looks like the above, please go to the Settings page, scroll down to the GitHub Pages section, and if necessary change the source branch from "gh-pages" to "master" and click "Save".  You may have to commit another change to trigger a rebuild of the repo; I'm not sure whether or not that's necessary.
 
