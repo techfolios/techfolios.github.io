@@ -1,7 +1,11 @@
 ## To Do
 
-* Update documentation
-* V1 to V2 migration guide
+* Finish Quick Start: Projects
+* Quick Start: Essays
+* User Guide
+* Developer Guide
+* V2 migration Guide
+* News item for V2 release
 
 Misc:
 * generate alternative CV format
