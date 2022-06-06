@@ -254,7 +254,7 @@ Now we're getting somewhere!  As you can see, the first part of the page should 
 
 ## Configure projects
 
-Let's look at projects.
+Let's look at projects. Projects are cool. Super cool.
 
 ## Configure essays
 
