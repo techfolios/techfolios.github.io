@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>TechFolios Blog</title>
+        <link>https://techfolios.github.io/blog</link>
+        <description>TechFolios Blog</description>
+        <lastBuildDate>Wed, 01 Aug 2018 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Techfolio Designer]]></title>
+            <link>https://techfolios.github.io/blog/techfolio-designer</link>
+            <guid>techfolio-designer</guid>
+            <pubDate>Wed, 01 Aug 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[Techfolio Designer has not been updated to work with Techfolios Version 2]]></description>
+            <content:encoded><![CDATA[<div class="admonition admonition-warning alert alert--danger"><div class="admonition-heading"><h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>warning</h5></div><div class="admonition-content"><p>Techfolio Designer has not been updated to work with Techfolios Version 2</p></div></div><p>We are delighted to announce the initial release of TechFolio Designer: a cross-platform, desktop application designed exclusively for the development of TechFolio professional portfolios.</p><p>If you have problems, questions, or want to get involved, please contact Philip Johnson (<a href="mailto:johnson@hawaii.edu" target="_blank" rel="noopener noreferrer">johnson@hawaii.edu</a>).</p><p>If you are a student at the University of Hawaii and want to get course credits during Fall of 2018 to work (in part) on TechFolio Designer, please check out the <a href="http://philipmjohnson.org/ics491f18/" target="_blank" rel="noopener noreferrer">ICS 491, Fall 2018 Class Description</a>.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[Syntax highlighting fix]]></title>
+            <link>https://techfolios.github.io/blog/syntax-highlighting-fix</link>
+            <guid>syntax-highlighting-fix</guid>
+            <pubDate>Sun, 03 Dec 2017 00:00:00 GMT</pubDate>
+            <description><![CDATA[There has been a longstanding bug in Techfolios which prevented fenced code blocks from being highlighted.]]></description>
+            <content:encoded><![CDATA[<p>There has been a longstanding bug in Techfolios which prevented <a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/" target="_blank" rel="noopener noreferrer">fenced code blocks</a> from being highlighted.</p><p>We finally figured out the problem: Techfolios need to load a rouge style file, and they weren't. With today's commit, the Techfolio header will load a rouge style sheet from the css/rouge directory.  There are a selection of rouge style files stored in there; you can change the default selected file by editing _config.yml.</p>]]></content:encoded>
+            <category>bug</category>
+        </item>
+        <item>
+            <title><![CDATA[TechFolio Workshops]]></title>
+            <link>https://techfolios.github.io/blog/workshops-2016</link>
+            <guid>workshops-2016</guid>
+            <pubDate>Tue, 11 Oct 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Department of Information and Computer Sciences is delighted to announce a three part workshop on developing a professional portfolio. These workshops will be held on Wednesday, November 2, 9, and 16, from 430pm.]]></description>
+            <content:encoded><![CDATA[<p>The Department of Information and Computer Sciences is delighted to announce a three part workshop on developing a professional portfolio. These workshops will be held on Wednesday, November 2, 9, and 16, from 4:30 to 5:30pm.</p>]]></content:encoded>
+            <category>workshop</category>
+        </item>
+        <item>
+            <title><![CDATA[Release 1.1]]></title>
+            <link>https://techfolios.github.io/blog/release-1-1</link>
+            <guid>release-1-1</guid>
+            <pubDate>Mon, 10 Oct 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[Release 1.1 of TechFolio is now available. Enhancements include:]]></description>
+            <content:encoded><![CDATA[<p>Release 1.1 of TechFolio is now available. Enhancements include:</p><ul><li>Semantic UI updated from 2.2.2 to 2.2.4.  Among other things, this means more icons (such as GitLab).</li><li>Your email address now appears on your resume page (bio-network-links.html).</li></ul>]]></content:encoded>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[ICS Portfolios]]></title>
+            <link>https://techfolios.github.io/blog/ics-portfolios</link>
+            <guid>ics-portfolios</guid>
+            <pubDate>Sat, 01 Oct 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[The TechFolio team is happy to announce the initial release of ICS Portfolios, a site providing a portal to dozens of TechFolios created by students and faculty in the Department of Information and Computer Science at the University of Hawaii.]]></description>
+            <content:encoded><![CDATA[<p>The TechFolio team is happy to announce the initial release of <a href="https://ics-portfolios.github.io" target="_blank" rel="noopener noreferrer">ICS Portfolios</a>, a site providing a portal to dozens of TechFolios created by students and faculty in the <a href="http://www.ics.hawaii.edu" target="_blank" rel="noopener noreferrer">Department of Information and Computer Science</a> at the <a href="http://www.hawaii.edu" target="_blank" rel="noopener noreferrer">University of Hawaii</a>.</p><p>ICS Portfolios leverages the use of JSON Resume format to build a directory of the ICS community with a summary of each member along with a link to their professional portfolios for details. </p><p>If you are a member of the ICS community (student, faculty, or alumni) and would like to be included, please let us know.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[Techfolios at FullStack Honolulu]]></title>
+            <link>https://techfolios.github.io/blog/fullstack-presentation</link>
+            <guid>fullstack-presentation</guid>
+            <pubDate>Thu, 15 Sep 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[TechFolios will be presented at the inaugural meeting of FullStack Honolulu on October 6, 2016. See the Facebook Event Page for details on the event time and place.]]></description>
+            <content:encoded><![CDATA[<p>TechFolios will be presented at the inaugural meeting of <a href="http://fullstack.org/" target="_blank" rel="noopener noreferrer">FullStack Honolulu</a> on October 6, 2016. See the <a href="https://www.facebook.com/events/213687262381371" target="_blank" rel="noopener noreferrer">Facebook Event Page</a> for details on the event time and place.</p>]]></content:encoded>
+            <category>presentation</category>
+        </item>
+        <item>
+            <title><![CDATA[Initial Release]]></title>
+            <link>https://techfolios.github.io/blog/initial-release</link>
+            <guid>initial-release</guid>
+            <pubDate>Wed, 10 Aug 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[After review and lots of minor bug fixes, the TechFolio team is delighted to announce release 1.0 of TechFolio.]]></description>
+            <content:encoded><![CDATA[<p>After review and lots of minor bug fixes, the TechFolio team is delighted to announce release 1.0 of TechFolio.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[Preview Release]]></title>
+            <link>https://techfolios.github.io/blog/preview-release</link>
+            <guid>preview-release</guid>
+            <pubDate>Wed, 15 Jun 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[After just two weeks of development, the TechFolio team is delighted to announce a preview release. Please take a look and let us know what you think.]]></description>
+            <content:encoded><![CDATA[<p>After just two weeks of development, the TechFolio team is delighted to announce a preview release. Please take a look and let us know what you think.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>
