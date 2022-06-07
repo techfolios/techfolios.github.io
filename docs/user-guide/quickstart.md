@@ -441,7 +441,11 @@ The good news is that there's a much better faster and easier way to work on you
 
 ## Configure essays
 
-Once understand how to create add a new project to your portfolio and unpublish the template projects, then you also understand how to create a new essay and unpublish existing essays.  The process for creating a new essay is almost exactly the same:
+Once understand how to create add a new project to your portfolio and unpublish the template projects, then you also understand how to create a new essay and unpublish existing essays.  
+
+### Create a new essay
+
+The process for creating a new essay is almost exactly the same:
 
   1. Navigate to an existing essay file, and press the "copy" icon to make a copy of the raw contents. 
   2. In the `essays/` directory, create a new file.
@@ -453,6 +457,8 @@ Once understand how to create add a new project to your portfolio and unpublish 
 
 The only thing that's different between projects and essays is that essays are actually easier to create, since you don't have provide an image for the home page. 
 
+### Unpublish existing essays 
+
 The process for unpublishing the template essays is exactly the same:
 
   1. Navigate to an existing essay file, and click the pencil icon to edit it.
@@ -460,7 +466,20 @@ The process for unpublishing the template essays is exactly the same:
   3. Commit the changes to the file.
   4. Monitor the Actions tab to see when your portfolio is finished being rebuilt and redeployed, then check out your changes.
 
-Since the process for essays is so similar to projects, I will not step you through it.  Just go ahead and add a simple essay to your portfolio, and then unpublish the template essays to remove them from your portfolio.  When you are done, your portfolio home page should look similar to this:
+Since the process for essays is so similar to projects, I will not step you through it.  Just go ahead and add a simple essay to your portfolio, and then unpublish the template essays to remove them from your portfolio.  
 
+### View portfolio
+
+When you are done, your portfolio home page should have a single project and a single essay of yours:
+
+![](/img/quickstart/portfolio-with-one-essay.png)
 
 ## Configure resume
+
+We're almost done with the Quick Start.  The only thing left to fix is the resume page.  Right now, the top part of the resume page is OK, but all of the sections starting with "Skills" still contain the content from the template:
+
+![](/img/quickstart/portfolio-original-resume.png)
+
+
+
+![](/img/quickstart/portfolio-with-one-essay.png)
