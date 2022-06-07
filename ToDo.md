@@ -15,6 +15,7 @@ Misc:
     * Add validation for date field in projects and essays
 * Make page title and URL 'cv' for cv theme.
 * Katie example portfolio
+* https://github.com/emmabostian/developer-portfolios
 
 Version 2 features:
 * Bootstrap 5, Jekyll 4.2
