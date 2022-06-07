@@ -2,13 +2,13 @@
 title: Quick Start
 ---
 
-:::warning June 1, 2022: Under Construction!
-I am actively working on these instructions. I anticipate completing them around June 12, 2022. Please check back then!
+:::warning Under Construction!
+I am actively working on these instructions. I anticipate completing them during June, 2022. Please check back later!
 :::
 
-This Quick Start is intended to provide the minimum of information necessary to produce your first draft of a professional portfolio. 
+This Quick Start is intended to help you set up your first draft of a professional portfolio with a minimum of complications. 
 
-## Initial setup 
+## Initialization
 
 The following initialization tasks are "one time only".
 
@@ -46,7 +46,7 @@ Then press the `Create repository from template` button. GitHub will make a new 
 Make sure the repository name is correct. As you can see in this example, since my GitHub username is "philipmjohnson", the repository name must be "philipmjohnson.github.io". If the first part of the repository name does not match your GitHub username exactly, then you need to rename your repository right now to make it match. Click on the Settings link to rename your repo, it's easy to fix. 
 :::
 
-Now let's fix the "About" section to link to your portfolio. Click on the gear icon next to the "About" label, which brings up a dialog box. Add "Professional Portfolio" as the description, add "https://USERNAME.github.io" (where USERNAME is our username) as the website, and (if you want) add "professional-portfolio" as a topic.  The result should look like this:
+Now let's fix the "About" section to link to your portfolio. Click on the gear icon next to the "About" label, which brings up a dialog box. Add "Professional Portfolio" as the description, add "https://USERNAME.github.io" (where USERNAME is your username) as the website, and (if you want) add "professional-portfolio" as a topic.  The result should look like this:
 
 ![](/img/quickstart/about-dialog.png)
 
@@ -126,25 +126,27 @@ This run only took 36 seconds, so it completed by the time I switched to this ta
 
 ![](/img/quickstart/pages-workflow-run2.png)
 
+As you can see, the "deploy" task provides a link to your professional portfolio.
+
 ### View your portfolio
 
-As you can see, this page has a link to your professional portfolio.  Click on it and you'll see your brand new professional portfolio!
+Click the link to see your brand new professional portfolio:
 
 ![](/img/quickstart/initial-portfolio.png)
 
-Congratulations!
+Congratulations! The URL "https://philipmjohnson.github.io" now shows the portfolio for...  Molly Maluhia?
 
 ## Configure bio.json
 
-OK, I understand if you are a bit disappointed right now---unless you are Molly Maluhia, that portfolio doesn't look like you at all!  
+OK, I understand if you are a bit disappointed---unless you are Molly Maluhia, that portfolio doesn't represent you at all!  
 
-The good news is that you've finished the "initial setup" for your TechFolio, and now you can start learning how to customize it to reflect your accomplishments over time. 
+The good news is that you've finished the "initialization" for your TechFolio, and now you can start learning how to customize it to reflect your *own* accomplishments over time. 
 
 ### Create a headshot
 
 The default TechFolio layout requires a square image to be used as the "head shot".  So, take a moment right now to look through your photos to find a picture that you want to use as the head shot. 
 
-While there are different ways to create a URL to that image and make it square if it isn't already, a very easy way is to upload that photo as your GitHub profile picture, which will automatically crop it into a square image if it isn't already. 
+While there are many different ways to create a URL to your headshot and make it square if it isn't already, a very easy way is to upload that photo as your GitHub profile picture, which will automatically crop it into a square image if it isn't already. 
 
 To do this, go to your account page and then move your mouse over the head shot area, which will make the image a button with the comment "Change your avatar"
 
@@ -162,7 +164,9 @@ When you have finished the upload process, GitHub will provide a link to your pr
 
 ![](/img/quickstart/change-avatar4.png)
 
-(Note that GitHub will redirect this URL to a different, more complicated URL, but you can always use the simple one).
+:::info 
+Note that GitHub will redirect this URL to a different, more complicated URL, but you can always use the simple one).
+:::
 
 Now that you have a URL that you can use for your head shot, let's fix the basic biographical information in your portfolio.
 
@@ -258,7 +262,7 @@ published: true
 labels:
   - Lisp
   - GitHub
-summary: A text adventure game I developed for ICS 313.
+summary: "A text adventure game I developed for ICS 313."
 ---
 ```
 
@@ -333,6 +337,30 @@ The corridor is lit with the candle. It is so long that you cannot see to the en
 Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
 ```
 To create a professional portfolio using TechFolios, you will need to learn how to write Markdown. Don't worry, it's really, really easy.  Here's a good [Markdown Tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to get you started if you don't have any prior experience with it.
+
+### Create new project
+
+Now that you understand a little about how projects are structured, let's create a new one. The easiest way to do that is to copy the contents of an existing project definition into a new file in the projects folder, then edit the contents. 
+
+To start, navigate to one of the projects in the projects folder, such as micromouse.md:
+
+![](/img/quickstart/copy-raw-project-contents.png)
+
+As shown above, there is a button you can press to "copy raw contents". Click it to copy the contents of this file to your browser clipboard.
+
+Now navigate up to the projects directory, and click the "Add File" button, which gives you the option to "Create new file":
+
+![](/img/quickstart/create-new-project-file.png)
+
+Click create new file, then click into the Edit new file text area, and paste the contents of the clipboard. The result should look like this:
+
+![](/img/quickstart/pasted-project-contents.png)
+
+
+
+
+
+
 
 
 

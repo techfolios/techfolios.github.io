@@ -40,7 +40,7 @@ const config = {
           src: 'img/techfolio-logo.png',
         },
         items: [
-          { to: 'docs/overview', label: 'Overview', position: 'right' },
+          { to: 'docs/user-guide/quickstart', label: 'Quick Start', position: 'right' },
           { to: 'docs/user-guide/overview', label: 'User Guide', position: 'right' },
           { to: 'docs/developer-guide/overview', label: 'Developer Guide', position: 'right' },
           { to: '/blog', label: 'News', position: 'right'},
