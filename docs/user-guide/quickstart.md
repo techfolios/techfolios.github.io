@@ -374,7 +374,36 @@ Scroll to the bottom and press "Commit new file" to create it. Now the projects 
 
 ![](/img/quickstart/updated-projects-directory.png)
 
+Importantly, your change to the repo kicked off the GitHub Actions to rebuild and redeploy your portfolio. Go to the Actions page and wait until those two actions complete:
 
+![](/img/quickstart/rebuild-with-radgrad.png)
+
+Now check out your portfolio. Mine looks like this:
+
+![](/img/quickstart/portfolio-with-radgrad.png)
+
+This is pretty good, but there's two problems:
+
+  1. The RadGrad project displays the image from the Micromouse project.
+  2. My portfolio still contains projects from the template. 
+
+Let's fix both of these problems now.
+
+### Update project image
+
+First, find an image to represent your project and crop it to a square image at least 300 pixels wide. See [this tutorial](https://www.groovypost.com/howto/crop-images-photos/) for instructions on how to crop images on Macintosh, Windows, or Linux.
+
+Once you've found your image, navigate to the `img` directory of your professional portfolio, and click on the "Add file" button:
+
+![](/img/quickstart/add-img-file.png)
+
+Select "Upload files", which brings you to this page:
+
+![](/img/quickstart/drag-files.png)
+
+Upload the file, then scroll to the bottom of the page and click "Commit changes".  When you are done, the `img` directory should contain your new project file. In my case, it's named "radgrad_logo.png":
+
+![](/img/quickstart/updated-img-dir.png)
 
 
 ## Configure essays
