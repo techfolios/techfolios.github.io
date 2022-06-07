@@ -405,9 +405,62 @@ Upload the file, then scroll to the bottom of the page and click "Commit changes
 
 ![](/img/quickstart/updated-img-dir.png)
 
+The last step is to edit the front matter of your project description to specify the path to this image:
+
+![](/img/quickstart/img-field-update.png)
+
+:::warning
+Note that the images for the template projects are in subdirectories of the `img` directory, but in this example, I uploaded the file to the top-level of the img directory. So, make sure you get the path to your file correct.
+
+It's a good practice to create subdirectories to organize your images, but you can wait to do that until you are developing your portfolio locally. See the User Guide for details on how to do that.
+:::
+
+Scroll to the bottom, commit the change, go to the Actions tab, wait for the build to finish, and (in my case) the portfolio now looks like this:
+
+![](/img/quickstart/portfolio-with-radgrad-logo.png)
+
+### Unpublish template projects
+
+The only thing left to do is remove the template projects from your portfolio.  An easy way to do that is to simply delete the template project files from the `projects/` directory.
+
+But, you might find those files to be useful examples in future, so a better approach is to "unpublish" them.  That way, the files are still available to you to look at for reference purposes, but they won't appear in your portfolio.  To unpublish a project file, bring up the browser-based editor for the file:
+
+![](/img/quickstart/published-true.png)
+
+Change the `published:` field from true to false, and commit the change. 
+
+Go ahead and set the `published:` field to false for all three template projects. Monitor the Actions page until all of the builds complete and your portfolio is deployed.  Your portfolio will now display only the project that you've actually worked on:
+
+![](/img/quickstart/portfolio-with-one-project.png)
+
+:::info Developing locally is way easier
+If you're like me, you will find that editing your portfolio files using the browser and waiting for your portfolio to be re-deployed in order to see your changes is very tedious and time-consuming. 
+
+The good news is that there's a much better faster and easier way to work on your portfolio. You just have to install a few tools on your computer, and then you can edit a local copy of your portfolio files, see the changes to your portfolio almost instantly, and then commit the changes to GitHub when you are ready. We cover this in the User Guide.  
+:::
 
 ## Configure essays
 
-TBD
+Once understand how to create add a new project to your portfolio and unpublish the template projects, then you also understand how to create a new essay and unpublish existing essays.  The process for creating a new essay is almost exactly the same:
+
+  1. Navigate to an existing essay file, and press the "copy" icon to make a copy of the raw contents. 
+  2. In the `essays/` directory, create a new file.
+  3. Paste the raw contents of the copied essay into the file editor.
+  4. Provide a file name (no spaces, please!).
+  5. Edit the front matter and the body to reflect your essay contents. 
+  6. Save the essay file.
+  7. Monitor the Actions tab to see when your portfolio is finished being rebuilt and redeployed, then check out your changes.
+
+The only thing that's different between projects and essays is that essays are actually easier to create, since you don't have provide an image for the home page. 
+
+The process for unpublishing the template essays is exactly the same:
+
+  1. Navigate to an existing essay file, and click the pencil icon to edit it.
+  2. Change the value of the `published:` field from true to false.
+  3. Commit the changes to the file.
+  4. Monitor the Actions tab to see when your portfolio is finished being rebuilt and redeployed, then check out your changes.
+
+Since the process for essays is so similar to projects, I will not step you through it.  Just go ahead and add a simple essay to your portfolio, and then unpublish the template essays to remove them from your portfolio.  When you are done, your portfolio home page should look similar to this:
+
 
 ## Configure resume
