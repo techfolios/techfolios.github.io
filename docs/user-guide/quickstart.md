@@ -356,10 +356,23 @@ Click create new file, then click into the Edit new file text area, and paste th
 
 ![](/img/quickstart/pasted-project-contents.png)
 
+:::info Soft wrap is better
+To make your life way easier, click on the "No wrap" button and select "Soft wrap" instead. Now all of the text will appear in the browser window without horizontal scrolling.
+:::
 
+Now edit this file to create your first project:
 
+  1. **File Name:** Give the file a name with the extension ".md" at the top of the page. Make sure the file name does not include any spaces.
+  2. **Front Matter:** Edit the title, date, labels, and summary fields of the front matter to reflect your project. Don't worry about the image for now.
+  3. **Project Body:** Write a short paragraph or two about your project.  Don't worry about fancy formatting for now. 
 
+Here's what mine looks like after making these changes:
 
+![](/img/quickstart/radgrad-edits.png)
+
+Scroll to the bottom and press "Commit new file" to create it. Now the projects directory should show your new project file:
+
+![](/img/quickstart/updated-projects-directory.png)
 
 
 
