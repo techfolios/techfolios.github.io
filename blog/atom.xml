@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://techfolios.github.io/blog</id>
     <title>TechFolios Blog</title>
-    <updated>2018-08-01T00:00:00.000Z</updated>
+    <updated>2022-06-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://techfolios.github.io/blog"/>
     <subtitle>TechFolios Blog</subtitle>
     <icon>https://techfolios.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[TechFolios 2]]></title>
+        <id>/2022/06/15/version-2</id>
+        <link href="https://techfolios.github.io/blog/2022/06/15/version-2"/>
+        <updated>2022-06-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The TechFolios team is pleased to announce a new major release of TechFolios.  Since its initial release almost 7 years ago, TechFolios has been used by almost 2,000 software developers to create their professional portfolio. We've taken our experience over the years into account when designing this release which we believe provides a significantly improved experience for users.]]></summary>
+        <content type="html"><![CDATA[<p>The TechFolios team is pleased to announce a new major release of TechFolios.  Since its initial release almost 7 years ago, TechFolios has been used by almost 2,000 software developers to create their professional portfolio. We've taken our experience over the years into account when designing this release which we believe provides a significantly improved experience for users.  </p><p>A summary of the improvements in TechFolios 2 include:</p><ol><li>Update from Jekyll 3 to <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll 4</a>.</li><li>Update of CSS framework from Semantic UI 2.4 to <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a>.</li><li>Use of <a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a> to:<ul><li>Indicate when the build fails (and whether it's due to a syntax error in bio.json)</li><li>Indicate when the portfolio has been deployed and is ready for viewing</li></ul></li><li>A refreshed, modernized <a href="https://techfolios.github.io/template/" target="_blank" rel="noopener noreferrer">default layout</a> incorporating a single page design.</li><li>Refreshed and improved documentation using <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.</li><li><a href="https://ogp.me/" target="_blank" rel="noopener noreferrer">Open Graph</a> meta-data to improve URL display.</li><li>Simplified theming using <a href="https://getbootstrap.com/docs/5.2/customize/css-variables/" target="_blank" rel="noopener noreferrer">Bootstrap CSS variables</a>.</li></ol><p>We believe this creates a firm foundation for the next 7 years and two thousand developers!</p><p>If you are new to TechFolios, you can get started following the instructions in the <a href="/docs/quick-start/overview">Quick Start</a>.</p><p>If you already have a TechFolio using Version 1 and want to migrate to TechFolios 2, please see the <a href="/docs/user-guide/v2-migration">Migration Guide</a></p>]]></content>
+        <author>
+            <name>Philip Johnson</name>
+            <uri>https://philipmjohnson.org</uri>
+        </author>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Techfolio Designer]]></title>
         <id>techfolio-designer</id>
