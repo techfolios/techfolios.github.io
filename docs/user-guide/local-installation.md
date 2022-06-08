@@ -2,26 +2,43 @@
 title: Local installation
 ---
 
-To develop your custom course content, you need to install three tools on your computer: (a) a git client so you you can download and upload the GitHub repository containing your site's files, (b) an editor so you can edit your source files, and (c) Jekyll so you can build your site locally during development.
+To more easily manage your portfolio, you should install three tools on your computer: (a) a git client so you you can download and upload the GitHub repository containing your site's files, (b) an editor so you can edit your source files, and (c) Jekyll so you can build your site locally and see changes quickly.
 
 ## Install GitHub Desktop (or another git client)
 
-If you are using MacOS or Windows, the easiest way to manage your Morea repositories is with [GitHub Desktop](https://desktop.github.com/).
-
-Basic use of Morea does not require any advanced capabilities of git: you can do all of your development in a single (main) branch.
+If you are using MacOS or Windows, the easiest way to manage your portfolio repository is with [GitHub Desktop](https://desktop.github.com/).  GitHub Desktop provides an extremely easy way to download your portfolio files from GitHub to your computer for editing, and then push the files back to GitHub for deployment once you're ready for that to happen.
 
 If you are using Linux, then you will need to install a different git client. If you are using Linux, you probably know this already and already have a git client installed.
 
 ## Install an editor
 
-You cannot use a word processor like Microsoft Word to edit Morea files.  Instead, you need a text editor such as Emacs, Vim, IntelliJ IDEA, Microsoft Visual Studio, Eclipse, Atom, or similar.
+You cannot use a word processor like Microsoft Word to edit your professional portfolio.  Instead, you need a text editor such as Emacs, Vim, IntelliJ IDEA, Microsoft Visual Studio, Eclipse, Atom, or similar.
 
-Please be sure to have one text editor available to you.
-
+Please be sure to install a text editor on your computer.  Any one will do.
 
 ## Install Jekyll
 
 The final step is to [install Jekyll](https://jekyllrb.com/docs/installation/). Jekyll runs on all platforms.
 
-To verify that you've installed Jekyll correctly, please go through the [Jekyll Quickstart](https://jekyllrb.com/docs/) instructions to be sure that you can create a simple Jekyll site and run it on your computer.
+To verify that you've installed Jekyll correctly, please go through the [Jekyll Quickstart](https://jekyllrb.com/docs/) instructions to be sure that you can create a simple Jekyll site and display it on your computer.
 
+:::warning Jekyll Quickstart may require webbrick
+For reasons that escape me, following the Jekyll Quickstart instructions on my computer leads to an error when I run `bundle exec jekyll serve`:
+
+```sh
+Users/philipjohnson/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/jekyll-4.2.2/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+```
+
+To fix this, add the following line to the end of the file called Gemfile:
+```sh
+gem "webrick", "~> 1.7"
+```
+
+Then run `bundle install` and `bundle exec jekyll serve` and things should work correctly.
+:::
+
+If you have followed the Quickstart instructions successfully, then you should be able to go to http://127.0.0.1:4000/ and see the following page:
+
+![](/img/user-guide/jekyll-quick-start-page.png)
+
+Make sure you can see this page after running `bundle exec jekyll serve`.  Once you can, then you know you have successfully installed Jekyll.

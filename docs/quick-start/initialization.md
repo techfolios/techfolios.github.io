@@ -1,0 +1,129 @@
+---
+title: Initialization
+---
+
+You only have to do the following initialization tasks when you are setting up your TechFolio for the very first time. 
+
+## Join GitHub
+
+To get started with TechFolios using this Quick Start, all you need is an account at GitHub. You don't need to download any software or even know how to use git. Everything you need to do for this Quick Start can be done in a browser.
+
+If you haven't already, [sign up for GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account) and [verify your email address](https://help.github.com/articles/verifying-your-email-address/). Choose your username wisely, as that will become part of the URL to your portfolio site.
+
+:::tip Username recommendations
+Keep your username professional and close to your real name: "the3Gr8est" might seem super clever to you right now, but will be awkward and embarrassing to you during an interview next year. Restrict yourself to lowercase characters, numbers, and hyphens to make it simple to remember. Uppercase adds unnecessary confusion.  Don't make your username location-specific: "philip-at-manoa" will be confusing if you move next year to San Francisco.
+:::
+
+If you decide your current GitHub username could use some improvement, it is very easy to [change your GitHub username](https://help.github.com/articles/changing-your-github-username/) to something more professional.
+
+Before proceeding, [login](http://github.com/login) to your GitHub account.
+
+## Copy the template
+
+In this step, you'll make your personal copy of the TechFolio template.
+
+First, go to [https://github.com/techfolios/template](https://github.com/techfolios/template):
+
+![](/img/quickstart/template-page.png)
+
+Click the `Use this template` button. Select your account as the "Owner", and specify the repository name as your account name plus ".github.io". It should look like this:
+
+![](/img/quickstart/create-repository.png)
+
+Then press the `Create repository from template` button. GitHub will make a new copy of the template in your account and display a page like this:
+
+![](/img/quickstart/template-copy.png)
+
+:::warning Verify your repository name
+Make sure the repository name is correct. As you can see in this example, since my GitHub username is "philipmjohnson", the repository name must be "philipmjohnson.github.io". If the first part of the repository name does not match your GitHub username exactly, then you need to rename your repository right now to make it match. Click on the Settings link to rename your repo, it's easy to fix.
+:::
+
+Now let's fix the "About" section to link to your portfolio. Click on the gear icon next to the "About" label, which brings up a dialog box. Add "Professional Portfolio" as the description, add "https://USERNAME.github.io" (where USERNAME is your username) as the website, and (if you want) add "professional-portfolio" as a topic.  The result should look like this:
+
+![](/img/quickstart/about-dialog.png)
+
+After saving the changes, you'll have a convenient link to your professional portfolio on the home page for this repo.
+
+## Configure `_config.yml`
+
+Now that your repository is set up, we can start editing the template files to make this professional portfolio your own.
+
+Scroll down the repository home page until you find the file named "_config.yml", and click on it, which will bring up a page that looks like this:
+
+![](/img/quickstart/config-yml.png)
+
+Click the pencil icon on the right hand side to edit the file:
+
+![](/img/quickstart/config-yml-edit1.png)
+
+The first section of the file, "Required Changes", contains the three lines you have to change.
+Edit `title:` to specify your own name, edit `url:` to specify your portfolio, and edit `baseurl:` to be the empty string. When you're done editing, that section of _config.yml should look similar to this:
+
+![](/img/quickstart/config-yml-edit2.png)
+
+Scroll to the bottom of this page and click "Commit changes" to save these changes.
+
+## Monitor the build
+
+Every time you commit a change to your portfolio, GitHub will attempt to build and deploy your revised portfolio. It does this through a technology called [GitHub Actions](https://docs.github.com/en/actions).  In fact, GitHub is trying to build a new version of your portfolio right now.  Let's watch.
+
+First, click on the "Actions" label on the home page of your repository.  That will take you to a page that looks like this:
+
+![](/img/quickstart/actions-page.png)
+
+This page indicates that two GitHub Actions (i.e. "workflows") named "pages-build-deployment" have previously run and completed successfully (indicated by the green checkmarks).  There is a workflow called "Jekyll Deploy" that is running right now (indicated by the yellow dot).  GitHub labels this workflow execution instance using the commit message associated with the change to the repository that triggered the Action. In this case, it was "Update _config.yml".
+
+You can watch the build in more detail by clicking on the "Update _config.yml" line, which takes you to a page like this:
+
+![](/img/quickstart/actions-page2.png)
+
+Clicking on the "build_and_deploy" label takes you to a page that shows the actual progress through the build:
+
+![](/img/quickstart/actions-page3.png)
+
+Finally, you can click on the arrow next to any build step and see what happened during it:
+
+![](/img/quickstart/actions-page4.png)
+
+After a few minutes, the Jekyll Deploy workflow will complete and the Actions page will look like this:
+
+![](/img/quickstart/actions-page6.png)
+
+Notice that there is a green checkmark beside the "Update _config.yml" workflow run, indicating that it has completed successfully.
+
+:::info Why monitor the build?
+There are two reasons it is useful to know how to monitor the build:
+
+1. By monitoring the build, you'll know when your updated portfolio is ready to be viewed.
+2. Monitoring the build lets you know if any errors occurred during the build.
+
+Also, please note that the very first time you try to build your portfolio, it takes about five minutes, which is a long time!  Don't worry, though: after this very first build, GitHub will cache the build artifacts and your future builds should take less than a minute to complete.
+:::
+
+## Set gh\_pages
+
+The above build process has created a new branch in your repo called "gh_pages".  Now you need to tell the GitHub Pages mechanism that this is where to look for your professional portfolio files. To do this, click on the "Settings" tab, and then on the "Pages" tab. This will take you to the following page:
+
+![](/img/quickstart/pages-tab.png)
+
+Click on the button named "Branch: main", and select "gh-pages", then click "Save". The page should now look like this:
+
+![](/img/quickstart/pages-tab2.png)
+
+Now click on the "Actions" tab and you'll notice that changing the branch from main to gh-pages has resulted in a new workflow run called "pages build and deployment":
+
+![](/img/quickstart/pages-workflow-run.png)
+
+This run only took 36 seconds, so it completed by the time I switched to this tab. If you click on this workflow run, you'll see a page like this:
+
+![](/img/quickstart/pages-workflow-run2.png)
+
+As you can see, the "deploy" task provides a link to your professional portfolio.
+
+## View your portfolio
+
+Click the link to see your brand new professional portfolio:
+
+![](/img/quickstart/initial-portfolio.png)
+
+Congratulations! The URL "https://philipmjohnson.github.io" now shows the portfolio for...  Molly Maluhia?

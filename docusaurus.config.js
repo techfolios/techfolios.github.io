@@ -40,9 +40,8 @@ const config = {
           src: 'img/techfolio-logo.png',
         },
         items: [
-          { to: 'docs/user-guide/quickstart', label: 'Quick Start', position: 'right' },
-          { to: 'docs/user-guide/overview', label: 'User Guide', position: 'right' },
-          { to: 'docs/developer-guide/overview', label: 'Developer Guide', position: 'right' },
+          { to: 'docs/overview', label: 'Documentation', position: 'right' },
+          { to: 'docs/gallery', label: 'Gallery', position: 'right' },
           { to: '/blog', label: 'News', position: 'right'},
           { to: '/docs/help', label: 'Help', position: 'right'},
           { href: 'https://github.com/techfolios', label: 'GitHub', position: 'right' },

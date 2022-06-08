@@ -2,12 +2,10 @@
 title: Overview
 ---
 
-Welcome to the TechFolios User Guide. This guide has the following sections:
+The User Guide is for those who have already gone through the [Quick Start](../quick-start/overview) and have a first draft of their professional portfolio online. This section will help you learn how to more easily manage your portfolio.
 
-1. The Quick Start steps you through the initial creation of a portfolio using only a browser. At the end, you'll have the initial version of your portfolio website.
+You'll learn:
 
-2. Local Installation explains how you can set up your computer to build and display your professional portfolio. This makes it radically faster to add essays and projects and update your biographical data. 
-
-3. Local Development explains how to use your local installation.
-
-4. The Reference Guide provides documentation regarding all the major components of TechFolios. 
+  * How to install GitHub Desktop, Jekyll, and an editor.
+  * How to run TechFolios locally in order to make changes and see the results instantly.
+  * The features of Markdown, Jekyll, and Bootstrap that can make your portfolio shine. 
