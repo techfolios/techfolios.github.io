@@ -25,6 +25,7 @@ const sidebars = {
         'user-guide/local-installation',
         'user-guide/local-development',
         'user-guide/reference-guide',
+        'user-guide/v2-migration',
       ],
     },
     {

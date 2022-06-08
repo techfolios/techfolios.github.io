@@ -82,16 +82,15 @@ The site should shortly appear at [http://localhost:3000](http://localhost:3000)
 
 Commit and push your changes to the source (i.e. the `source` branch).
 
-### 2. Philip deploys the site
+### 2. Build and deploy
 
-To deploy the site, make sure that GIT_USER is set and that you have commit privileges to the repo, then invoke:
+To deploy the site, make sure that GIT_USER and GIT_PASS are both set and that you have commit privileges to the repo, then invoke:
 
 ```
 npm run deploy
 ```
 
 This builds the static HTML and commits the results to the `main` branch of the techfolios.github.io repository.
-
 
 ## Logo attribution
 
