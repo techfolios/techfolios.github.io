@@ -2,7 +2,7 @@
 title: Local development
 ---
 
-## Clone your repository to your computer
+## Clone your repo
 
 The first step in setting up local development is to "clone" the GitHub repository containing your professional portfolio source files to your computer. To do this, go to your repo, click on "Code", and then select "Open with GitHub Desktop":
 
@@ -120,14 +120,52 @@ That's simple: just bring up GitHub Desktop, which shows that you've made a chan
 
 ![](/img/user-guide/github-desktop-change.png)
 
-Type in a commit comment, then click "Commit to main" to commit these changes locally. Afterwards, it will look like this:
+Type in a commit comment, then click "Commit to main" to commit these changes locally. Afterwards, GitHub Desktop will look like this:
 
 ![](/img/user-guide/github-desktop-change-2.png)
 
-Finally, press the "Push origin" button in the upper right corner to push your local changes to the copy of your repository located at GitHub.  Afterwards, it will look like this:
+Now press the "Push origin" button in the upper right corner to push your local changes to the copy of your repository located at GitHub.  Afterwards, GitHub Desktop will look like this:
 
 ![](/img/user-guide/github-desktop-change-3.png)
 
 This change to the contents of your professional portfolio repository at GitHub triggers a new build of your professional portfolio using GitHub Actions. You can see the progress by click on the Actions tab of your GitHub portfolio home page:
 
 ![](/img/user-guide/food-resiliency-commit-action.png)
+
+With a couple of minutes, this action and the following one to build and deploy should finish successfully:
+
+![](/img/user-guide/food-resiliency-action-complete.png)
+
+Once those actions are done, you can now see the deployed version of your portfolio, in my case https://philipmjohnson.github.io:
+
+![](/img/user-guide/food-resiliency-deployed.png)
+
+As you can see, my new "Food Resiliency" interest now appears in the published version of my portfolio.
+
+## Making mistakes
+
+Life would be so much better if we never made mistakes.  Let's see what happens when we make one. 
+
+Let's say that I forgot to put a comma at the end of the line specifying my new Food Resiliency interest:
+
+![](/img/user-guide/bio-json-error.png)
+
+What happens in this case is that http://127.0.0.1:4000/ will not update to display the new interest, which is confusing. To understand that there's a problem, you need to look at the shell window, which in this case displays the following:
+
+```shell
+Error: (/Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_data/bio.json): did not find expected ',' or ']' while parsing a flow sequence at line 16 column 16
+```
+
+The error message isn't perfect: the actual problem is on line 19, not line 16, but it does tell you that the JSON parser expected a "," and didn't find one. 
+
+This is why it's very important to monitor the shell output while you do local development---if you make a mistake, the shell will often let you know.
+
+:::tip Good editors are great
+If you look closely at the editor window above, you'll see that there is a red squiggly line at the end of line 19, and if you hover over it, the editor will tell you that you're missing a comma! 
+
+Moral of the story: use a good editor, they'll save you a lot of time.
+:::
+
+## Try it yourself
+
+Now that you've seen how to build, edit, view, and deploy a portfolio, go ahead and use this process to make a very simple change to your own portfolio.  That will get you ready for making more complicated improvements, as we'll describe in the next section.
