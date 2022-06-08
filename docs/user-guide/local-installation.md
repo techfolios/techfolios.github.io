@@ -37,3 +37,5 @@ If you have followed the Quickstart instructions successfully, then you should b
 ![](/img/user-guide/jekyll-quick-start-page.png)
 
 Make sure you can see this page after running `bundle exec jekyll serve`.  Once you can, then you know you have successfully installed Jekyll.
+
+Now that you have GitHub Desktop, an editor, and Jekyll, let's see how to build and view your professional portfolio locally.

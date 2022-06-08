@@ -2,11 +2,11 @@
 
 * User Guide
   * Local development "workflow" (build, edit, view, deploy) 
+  * bundle exec jekyll serve --livereload
 * Developer Guide
 
 Misc:
 * Can you put in a project_url in the project front matter?
-* try bundle exec jekyll serve --livereload
 * generate alternative CV format
 * Fix OG values
 * Make icons a different color on hover

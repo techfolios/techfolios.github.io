@@ -2,22 +2,21 @@
 title: Local development
 ---
 
-If you've completed the last two sections, you now have your own Morea website in a GitHub repository, and you've installed GitHub Desktop (or another git client), a text editor, and Jekyll.  Let's step through the use of these tools to make some simple changes to your site.
+## Clone your repository to your computer
 
-:::tip
-While it's technically possible to do all of the development of your site using GitHub's browser based editor (i.e. the same way you edited the `_config.yml` file in the Quick Start, that approach is not recommended for two reasons. First, that browser-based editor is lame.  Second, you can't see your changes without committing them and having GitHub build and publish the site.  Local tools provide a better development experience, and allow you to preview your site before publishing it so that mistakes are not made public.
-:::
+The first step in setting up local development is to "clone" the GitHub repository containing your professional portfolio source files to your computer. To do this, go to your repo, click on "Code", and then select "Open with GitHub Desktop":
 
-## Download your repository
-
-Go to your site, click on "Code", and then select "Open with GitHub Desktop":
+![](/img/user-guide/portfolio-download-desktop.png)
 
 
 That will bring up GitHub Desktop, which will ask you where in your file system you want to locate the files associated with this repository:
 
+![](/img/user-guide/desktop-clone-dialog.png)
 
-Make any adjustments to the path, then click "Clone" to create a copy of your repository on your computer. You will now have a local directory containing files similar to this:
 
+Adjust the "Local Path" to your liking, then click "Clone" to create a copy of your repository on your computer. You will now have a local directory containing files similar to this:
+
+![](/img/user-guide/local-repo-dir.png)
 
 ## Install libraries
 
