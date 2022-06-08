@@ -1,13 +1,12 @@
 ## To Do
 
-* Finish Quick Start: Projects
-* Quick Start: Essays
 * User Guide
 * Developer Guide
 * V2 migration Guide
 * News item for V2 release
 
 Misc:
+* try bundle exec jekyll serve --livereload
 * generate alternative CV format
 * Fix OG values
 * Make icons a different color on hover
@@ -18,8 +17,7 @@ Misc:
 * https://github.com/emmabostian/developer-portfolios
 
 Version 2 features:
-* Bootstrap 5, Jekyll 4.2
-* Rebuilt documentation using Docusaurus
+* Semantic UI 2.4 to Bootstrap 5, Jekyll 3 to Jekyll 4.2, Docusaurus for documentation
 * Easier theming.
 * JSON validation
 * Open Graph support

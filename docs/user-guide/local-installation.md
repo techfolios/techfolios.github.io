@@ -22,19 +22,14 @@ The final step is to [install Jekyll](https://jekyllrb.com/docs/installation/). 
 
 To verify that you've installed Jekyll correctly, please go through the [Jekyll Quickstart](https://jekyllrb.com/docs/) instructions to be sure that you can create a simple Jekyll site and display it on your computer.
 
-:::warning Jekyll Quickstart may require webbrick
-For reasons that escape me, following the Jekyll Quickstart instructions on my computer leads to an error when I run `bundle exec jekyll serve`:
+:::warning You need to run `bundle add webrick`
+The Jekyll documentation for the Quick Start notes that "Step 5 may fail".  Yes, it almost certainly will.  As instructed, go ahead and run:  
 
 ```sh
-Users/philipjohnson/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/jekyll-4.2.2/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+bundle install webbrick
 ```
 
-To fix this, add the following line to the end of the file called Gemfile:
-```sh
-gem "webrick", "~> 1.7"
-```
-
-Then run `bundle install` and `bundle exec jekyll serve` and things should work correctly.
+Then run `bundle exec jekyll serve` and things should work correctly.
 :::
 
 If you have followed the Quickstart instructions successfully, then you should be able to go to http://127.0.0.1:4000/ and see the following page:
