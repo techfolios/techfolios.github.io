@@ -1,5 +1,6 @@
 ---
 title: Gallery
+hide_table_of_contents: true
 ---
 
-Coming soon. I hope.
+Coming soon.

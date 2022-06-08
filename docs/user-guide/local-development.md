@@ -20,145 +20,114 @@ Adjust the "Local Path" to your liking, then click "Clone" to create a copy of y
 
 ## Install libraries
 
-Next, you need to install the libraries associated with your Morea site. To do this, open a Terminal (or shell), change directories to your repository directory, and invoke `bundle install`:
+Next, you need to install the libraries associated with TechFolios. To do this, open a Terminal (or shell), change directories to your repository directory, and invoke `bundle install`:
 
 ```shell
 $ bundle install
-Using public_suffix 4.0.6
-Using addressable 2.8.0
-Using bundler 2.2.24
-  :    :
-Using jekyll 4.2.0
-Using webrick 1.7.0
-Bundle complete! 6 Gemfile dependencies, 38 gems now installed.
+Fetching gem metadata from https://rubygems.org/..........
+Resolving dependencies...
+Using public_suffix 4.0.7
+Using bundler 2.3.4
+ :
+ :
+Using jekyll 4.2.2
+Using octokit 4.24.0
+Using jekyll-gist 1.5.0
+Bundle complete! 7 Gemfile dependencies, 43 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
+1 installed gem you directly depend on is looking for funding.
+  Run `bundle fund` for details
+$
 ```
 
 ## Run jekyll
 
-Now, build the Morea site and enable it to be displayed locally on your laptop by invoking `bundle exec jekyll serve`:
+Now, build your professional portfolio and enable it to be displayed locally on your laptop by invoking `bundle exec jekyll serve`:
 
 ```shell
 $ bundle exec jekyll serve
-Configuration file: /Users/philipjohnson/github/uhmanoa/cs299fall21/_config.yml
-Configuration file: /Users/philipjohnson/github/uhmanoa/cs299fall21/_config.yml
-            Source: /Users/philipjohnson/github/uhmanoa/cs299fall21
-       Destination: /Users/philipjohnson/github/uhmanoa/cs299fall21/_site
+Configuration file: /Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io
+       Destination: /Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_site
  Incremental build: disabled. Enable with --incremental
-      Generating...
-          Conflict: The following destination is shared by multiple files.
-                    The written file may end up with unexpected contents.
-                    /Users/philipjohnson/github/uhmanoa/cs299fall21/_site/schedule/schedule-info.js
-                     - /Users/philipjohnson/github/uhmanoa/cs299fall21/schedule/schedule-info.js
-                     - /Users/philipjohnson/github/uhmanoa/cs299fall21/schedule/schedule-info.js
-
-                    done in 0.166 seconds.
- Auto-regeneration: enabled for '/Users/philipjohnson/github/uhmanoa/cs299fall21'
-    Server address: http://127.0.0.1:4000/cs299fall21/
+      Generating... 
+                    done in 0.045 seconds.
+ Auto-regeneration: enabled for '/Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io'
+    Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
  ```
 
-You can ignore the "Conflict" warning if it appears.
+Now look for the "Server address:" field on the second to last line, which will usually be http://127.0.0.1:4000/. Cut and paste this url from your terminal window into a browser, and your portfolio should appear:
 
-Now look for the "Server address:" field on the second to last line. In this case, it's `http://127.0.0.1:4000/cs299fall21/`. Cut and paste the value from your terminal window into a browser, and the default site should appear:
+![](/img/user-guide/local-portfolio.png)
 
+The huge advantage to installing these tools and cloning your portfolio repo is that you can now almost instantly see how your edits to the source files change the presentation of your portfolio.  When you edit the files at GitHub, which is what you did during the Quick Start, you had to commit your changes and wait at least a minute to see how those changes looked in your portfolio. This time lag is simply unacceptable!
 
-## Customize your content
+## The build-edit-view-deploy workflow
 
-Now let's make some simple changes to your site. To do this, you'll need to bring up your text editor and point it at your repository directory.  Here is an example of using IntelliJ IDEA to create a "project" that enables manipulation of the repository directory and its contents:
+The most efficient way to work on your portfolio is with what we call the "build-edit-view-deploy workflow".  It works like this.
 
+### Build
 
-### Modify theme & navbar
+The first step is to build your portfolio locally. As we saw above, you do this by invoking invoking `bundle exec jekyll serve`.
 
-To begin, let's change the theme of the site from spacelab to cerulean, and get rid of the "Prerequisites" navbar menu item (because your course will not include any prerequisite modules).  Change the morea_theme: to cerulean, and comment out the Prerequisites entry in morea_navbar_items:
+Now your portfolio is available for viewing at http://127.0.0.1:4000/. 
 
+More importantly, changes you make to your portfolio can be seen almost instantly at that URL, which brings us to the "edit" step.
 
-Now go back to your terminal window, press `control-c` to terminate the Jekyll process, and `bundle exec jekyll serve` to restart. Refresh the browser window and it now should look like this:
+### Edit
 
+Let's say that I want to add a new interest to my portfolio called "Food Resiliency".  To do this, I bring up an editor (in my case, IntelliJ IDEA), and edit my bio.json file to include this interest:
 
-The Prerequisites menu item is gone, and the color theme is now blue.
+![](/img/user-guide/intellij-bio-json.png)
 
-### Unpublish modules
+Save the file.
 
-The example modules provide useful guidance on the syntax of Morea, but you don't want them to be part of your actual site. The easiest way to do that is to unpublish them. To unpublish the Introduction module, go into morea/modules/example-introduction/module-introduction.md, and change the published: field to `false`:
+### View
 
+To see the impact of my edit to bio.json on my portfolio, first check the console to see that no errors were generated:
 
-Jekyll may report some errors in the terminal window after you save this change. You can ignore them. Just type `control-c` followed by `bundle exec jekyll serve` as before to restart Jekyll. The first thing you'll notice is that the Introduction module no longer appears on the Modules page:
+```shell
+$ bundle exec jekyll serve                                         12:10:16
+Configuration file: /Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io
+       Destination: /Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.045 seconds.
+ Auto-regeneration: enabled for '/Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+                    
+      Regenerating: 1 file(s) changed at 2022-06-08 12:12:11
+                    _data/bio.json
+                    ...done in 0.018813 seconds.
+```
 
+Now refresh the browser window displaying http://127.0.0.1:4000/ to see the change:
 
-More significantly, the outcomes, readings, experiences, and assessments associated with that module have also disappeared.
+![](/img/user-guide/local-portfolio-2.png)
 
-Now go ahead and unpublish the remaining three example modules in the same fashion. Restart Jekyll, and now there's no modules at all:
+As you can see, "Food Resiliency" is now listed as an interest.
 
+### Deploy
 
-### Create a new  module
+So, my local copy of my professional portfolio is now updated, but how do I publish this change for all the world to see? 
 
-Let's start creating our own course content. Do the following:
+That's simple: just bring up GitHub Desktop, which shows that you've made a change to your local clone of the repo:
 
-   1. Make a copy of the example-introduction directory and call it introduction.
-   2. Once you've made the copy, delete the example-introduction directory.
-   3. In morea/introduction/module-introduction.md, edit the published: field from false to true.
-   4. Edit the title: field to your course number.
-   5. Edit the morea_id: field from example-introduction to introduction.
-   6. Edit the morea_icon_url: field from /example-introduction/ to /introduction/.
-   7. Delete all of the morea_readings: except for reading-syllabus.
-   8. Delete all of the morea_experiences except for experience-introduce-yourself
-   9. Edit the text following the front matter to refer to your course name.
+![](/img/user-guide/github-desktop-change.png)
 
-When you're done, module-introduction.md might look similar to this:
+Type in a commit comment, then click "Commit to main" to commit these changes locally. Afterwards, it will look like this:
 
+![](/img/user-guide/github-desktop-change-2.png)
 
-Restart Jekyll, and the modules page might look like this:
+Finally, press the "Push origin" button in the upper right corner to push your local changes to the copy of your repository located at GitHub.  Afterwards, it will look like this:
 
+![](/img/user-guide/github-desktop-change-3.png)
 
-And the readings page might look like this:
+This change to the contents of your professional portfolio repository at GitHub triggers a new build of your professional portfolio using GitHub Actions. You can see the progress by click on the Actions tab of your GitHub portfolio home page:
 
-
-Whoops! The reading still refers to ICS 199!  Go into the reading-syllabus.md file and edit the title: field (as well as any other content you want).  Now restart Jekyll, and the readings page might look like this:
-
-
-## Publish your changes
-
-Of course, there's lots more that needs to be done to this site, but let's now see how to publish these local modifications.  Go to GitHub Desktop, which will look similar to this:
-
-
-It shows all of the files which have been changed recently. Next, in the text field labeled "Summary (required)", type in a brief message, such as "Start work on Introduction module".
-
-At that point, the "Commit to main" button should become active. Press it to commit your changes:
-
-
-Now your changes have gone from being local changes in your laptop file system to part of the history of the local repository.
-
-The final step is to "push" these changes in your local repository to your repository on GitHub. To do that, press the "Push origin" button in the top right corner. After pressing it, GitHub Desktop will look like this:
-
-
-Morea is configured so that every time you push changes to GitHub, a GitHub Action is triggered to rebuild the site. In your browser, go back to your repository and click on "Actions". You should see something similar to this:
-
-
-This page indicates that the commit "Start work on Introduction module" triggered a build, which took 1 minute and 1 second. It successfully completed (as indicated by the green checkmark).
-
-Let's confirm that our local changes are published by retrieving the URL to our site:
-
-
-## Summary
-
-This might seem complicated the very first time you do it, but with a little bit of practice, you'll find that content development with Morea is pretty pleasant.
-
-To review, there are a couple of one-time setup actions:
-
-  1. Download your newly created site to your computer via GitHub Desktop.
-  2. Run `bundle install` in your directory to install libraries.
-
-Once that's done, develop your site by an iterative process of:
-
-  1. Type `bundle exec jekyll serve` to build your site and make it visible locally.
-  2. Edit source files and directories to change your course content.
-  3. Type `control-c` followed by `bundle exec jekyll serve` to rebuild and redisplay your site.
-
-Finally, once you're ready to publish your changes, go into GitHub Desktop:
-
-  1. Commit your changes to your local repository.
-  2. Push your changes to your local repository to the GitHub version of your repository.
-  3. Check to see that your changes are public (usually takes about one minute).
-
-## Continuing on
+![](/img/user-guide/food-resiliency-commit-action.png)

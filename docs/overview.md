@@ -1,8 +1,9 @@
 ---
 title: Overview
+hide_table_of_contents: true
 ---
 
-Welcome to TechFolios!  The goal of TechFolios is to provide you with a quick, easy, and no-cost way to create a modern, professional portfolio using a pre-built template, while also making it easy for you to customize your portfolio design if you so desire. 
+Welcome to TechFolios!  The goal of TechFolios is to provide software developers and other technologists with a quick, easy, and no-cost way to create a modern, professional portfolio using a pre-built template, while also making it easy for you to customize your portfolio design if you so desire. 
 
 The [Quick Start](quick-start/overview) is the first stop for those of you who are brand new to TechFolios. In under an hour, without installing any software, you can be up and running with a first draft of your own Professional Portfolio. 
 
@@ -12,4 +13,4 @@ While it's possible to manage your portfolio purely through the browser, it's mu
 
 Some folks will want to make more extensive changes to the layout and content of their portfolio. The [Developer Guide](developer-guide/overview) provides details on these and other matters regarding TechFolios.
 
-Interested in seeing a few examples of professional portfolios built using TechFolios? Check out the [Gallery](gallery).
+Interested in seeing a few examples of professional portfolios built using TechFolios? Check out our [Gallery](gallery).
