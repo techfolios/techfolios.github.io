@@ -2,15 +2,6 @@
 title: Reference Guide
 ---
 
-## 5. Drafts
-
-
-## 7. Formatting
-
-## 8. Custom theme design
-
-If you want to create your own custom themes, you need to become familiar with two facilities: Jekyll templates and Semantic UI.
-
 ### 8.1 Jekyll Templates
 
 TechFolio is based on [Jekyll](https://jekyllrb.com/).  Each of the pages are built using [Jekyll Templates](https://jekyllrb.com/docs/templates/), which in turn are based on the [Liquid Template Language](https://github.com/Shopify/liquid/wiki).
