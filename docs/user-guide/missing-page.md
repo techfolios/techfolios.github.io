@@ -9,4 +9,4 @@ The template techfolio comes with default handling when users request an URL not
 
 This is helpful if you are transitioning to TechFolio from another professional portfolio site and worry that others might have bookmarked URLs that will no longer point correctly to your updated essay and project pages.
 
-If you prefer to handle 404 errors in a different way, the best way is to create a copy of the missingpage.html layout file (such as missingpage-pj.html) and then edit the 404.html to point to your new missingpage-pj layout.  
+If you prefer to handle 404 errors in a different way, the best way is to create a copy of the missingpage.html layout file (such as my-missingpage.html) and then edit the 404.html to point to your new my-missingpage layout.  

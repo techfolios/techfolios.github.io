@@ -5,7 +5,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Quick Start',
-      collapsed: false,
+      collapsed: true,
       items: [
         'quick-start/overview',
         'quick-start/initialization',
@@ -20,7 +20,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'User Guide',
-      collapsed: false,
+      collapsed: true,
       items: [
         'user-guide/overview',
         'user-guide/tool-installation',
@@ -31,19 +31,9 @@ const sidebars = {
         'user-guide/customize-layout',
         'user-guide/missing-page',
         'user-guide/drafts',
-        'user-guide/reference-guide',
+        'user-guide/invalid-date-field',
+        'user-guide/locale-problem',
         'user-guide/v2-migration',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Developer Guide',
-      collapsed: false,
-      items: [
-        'developer-guide/overview',
-        'developer-guide/theme-customization',
-        'developer-guide/manage-this-site',
-        'developer-guide/markdown-features',
       ],
     },
     'gallery',

@@ -9,8 +9,6 @@ The [Quick Start](quick-start/overview) is the first stop for those of you who a
 
 If you created a professional portfolio using TechFolios prior to June 2022, and want to update to TechFolios 2, check out our [Migration Guide](user-guide/v2-migration).
 
-While it's possible to manage your portfolio purely through the browser, it's much more efficient to install a few tools onto your computer so you can edit your portfolio and see the changes locally. The [User Guide](user-guide/overview) explains how to do this, as well as how to customize the colors and fonts in order to make the portfolio better reflect your personality.
-
-Some folks will want to make more extensive changes to the layout and content of their portfolio. The [Developer Guide](developer-guide/overview) provides details on these and other matters regarding TechFolios.
+While it's possible to manage your portfolio purely through the browser, it's much more efficient to install a few tools onto your computer so you can edit your portfolio and see the changes locally. The [User Guide](user-guide/overview) explains how to do this, as well as how to customize the colors, fonts, and layout in order to make the portfolio better reflect your personality.
 
 Interested in seeing a few examples of professional portfolios built using TechFolios? Check out our [Gallery](gallery).

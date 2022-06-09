@@ -1,5 +1,5 @@
 ---
-title: Formatting
+title: Format text, images, video
 ---
 
 Creating attractive project and essay pages requires basic understanding of GitHub Flavored Markdown and Bootstrap (for images and more complex page layouts). Fortunately, it's pretty easy to get basic understanding.
