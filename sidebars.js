@@ -22,8 +22,9 @@ const sidebars = {
       collapsed: false,
       items: [
         'user-guide/overview',
-        'user-guide/local-installation',
+        'user-guide/tool-installation',
         'user-guide/local-development',
+        'user-guide/anatomy-of-bio-json',
         'user-guide/reference-guide',
         'user-guide/v2-migration',
       ],

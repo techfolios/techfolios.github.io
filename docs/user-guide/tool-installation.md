@@ -1,5 +1,5 @@
 ---
-title: Local installation
+title: Tool installation
 ---
 
 To more easily manage your portfolio, you should install three tools on your computer: (a) a git client so you you can download and upload the GitHub repository containing your site's files, (b) an editor so you can edit your source files, and (c) Jekyll so you can build your site locally and see changes quickly.

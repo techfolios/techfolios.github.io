@@ -16,3 +16,4 @@ Misc:
 * Katie example portfolio
 * https://github.com/emmabostian/developer-portfolios
   * philipmjohnson.github.io (built using TechFolios) 
+* Change the 404 to list all the projects and essays.

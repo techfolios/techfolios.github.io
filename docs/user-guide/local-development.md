@@ -62,7 +62,9 @@ Now look for the "Server address:" field on the second to last line, which will 
 
 ![](/img/user-guide/local-portfolio.png)
 
-The huge advantage to installing these tools and cloning your portfolio repo is that you can now almost instantly see how your edits to the source files change the presentation of your portfolio.  When you edit the files at GitHub, which is what you did during the Quick Start, you had to commit your changes and wait at least a minute to see how those changes looked in your portfolio. This time lag is simply unacceptable!
+The huge advantage to installing these tools and cloning your portfolio repo is that you can now see almost instantly how your edits to the source files change the presentation of your portfolio.  
+
+When you edit the files at GitHub, which is what you did during the Quick Start, you had to commit your changes and wait at least a minute to see how those changes looked in your portfolio. This time lag is simply unacceptable!
 
 ## The build-edit-view-deploy workflow
 
@@ -74,7 +76,7 @@ The first step is to build your portfolio locally. As we saw above, you do this 
 
 Now your portfolio is available for viewing at http://127.0.0.1:4000/. 
 
-More importantly, changes you make to your portfolio can be seen almost instantly at that URL, which brings us to the "edit" step.
+Building your portfolio locally means changes can be seen almost instantly at that URL, which brings us to the "edit" step.
 
 ### Edit
 
@@ -128,11 +130,11 @@ Now press the "Push origin" button in the upper right corner to push your local 
 
 ![](/img/user-guide/github-desktop-change-3.png)
 
-This change to the contents of your professional portfolio repository at GitHub triggers a new build of your professional portfolio using GitHub Actions. You can see the progress by click on the Actions tab of your GitHub portfolio home page:
+This change to the contents of your professional portfolio repository at GitHub triggers a new build of your professional portfolio using GitHub Actions. You can see the progress by clicking on the Actions tab of your GitHub portfolio home page:
 
 ![](/img/user-guide/food-resiliency-commit-action.png)
 
-With a couple of minutes, this action and the following one to build and deploy should finish successfully:
+Within a couple of minutes, this action and the following one to build and deploy should finish successfully:
 
 ![](/img/user-guide/food-resiliency-action-complete.png)
 
@@ -152,8 +154,9 @@ Let's say that I forgot to put a comma at the end of the line specifying my new 
 
 What happens in this case is that http://127.0.0.1:4000/ will not update to display the new interest, which is confusing. To understand that there's a problem, you need to look at the shell window, which in this case displays the following:
 
-```shell
-Error: (/Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_data/bio.json): did not find expected ',' or ']' while parsing a flow sequence at line 16 column 16
+```
+Error: (/Users/philipjohnson/github/philipmjohnson/philipmjohnson.github.io/_data/bio.json): 
+did not find expected ',' or ']' while parsing a flow sequence at line 16 column 16
 ```
 
 The error message isn't perfect: the actual problem is on line 19, not line 16, but it does tell you that the JSON parser expected a "," and didn't find one. 
