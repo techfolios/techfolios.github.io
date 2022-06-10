@@ -31,3 +31,7 @@ Here are some examples of custom layouts.
 ### Katie Amberg-Johnson
 
 ### Philip Johnson
+
+## Show us what you got!
+
+If you come up with an interesting layout, please contact us via the [Help](../help) page. Perhaps we'd like to showcase your work in our [Gallery](../gallery.md)!

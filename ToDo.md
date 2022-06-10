@@ -1,6 +1,6 @@
 ## To Do
 
-* Finish customize theme page
+* In customize layout, step through index.html to home layout and finally to include files. 
 * Create pmj portfolio
   * project_url, CV
 * Create kaj portfolio

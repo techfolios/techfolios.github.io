@@ -1,11 +1,11 @@
 ---
-title: Change theme
+title: Configure theme
 hide_table_of_contents: true
 ---
 
 ## What's a theme?
 
-In TechFolios, "theme" refers to the colors and fonts associated with a portfolio, and "layout" refers to the way the various components are laid out on the page. 
+In TechFolios, "theme" refers to the colors and fonts associated with a portfolio (while "layout" refers to the way the various components are laid out on the page).
 
 The default theme associated with the template uses the Open Sans font and a few off-white hues to provide a modern, professional look. But perhaps you are looking for something a little more colorful and offbeat? The template provides a few alternative themes for you to explore. To see which ones are currently provided with the template, check out the `css/techfolio-theme` directory:
 

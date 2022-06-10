@@ -13,7 +13,7 @@ const sidebars = {
         'quick-start/configure-projects',
         'quick-start/configure-essays',
         'quick-start/configure-resume',
-        'quick-start/change-theme',
+        'quick-start/configure-theme',
         'quick-start/next-steps',
       ],
     },
