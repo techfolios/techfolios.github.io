@@ -1,10 +1,10 @@
 ## To Do
 
-* In customize layout, step through index.html to home layout and finally to include files. 
 * Create pmj portfolio
   * project_url, CV
 * Create kaj portfolio
 * Create Gallery page
+* Get rid of _config.yml vars for cv stuff.
 
 Misc:
 * Fix OG values
