@@ -62,7 +62,7 @@ You will occasionally want to quote another writer.  This is fine as long as you
 
 If you are just quoting a single sentence or two, you can simply use italics, quotation marks, and provide the author's name.  For example:
 
-*As noted by Steve Jobs, "Design is not just what it looks like and feels like.  Design is how it works."*
+As noted by Steve Jobs, *"Design is not just what it looks like and feels like.  Design is how it works."*
 
 For longer quotes, use the &lt;blockquote&gt; environment along with &lt;footer&gt;. For example:
 
