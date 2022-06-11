@@ -104,3 +104,19 @@ Once you've written and published it, take a look at the results!  Do the images
 ## One paragraph is not enough
 
 Writing two or three sentences is rarely enough to adequately describe a project or essay. You generally want two to three paragraphs.
+
+## Projects don't need to have code
+
+If you are a computer science student, you might jump to the conclusion that "Projects" means "Software Projects".
+
+Instead, think of Projects as descriptions of "Significant Endeavors", some of which will (ideally) involve technologu, but which might involve other things as well.
+
+In some cases, your best "significant endeavors" so far might all be school projects. That’s not automatically bad: some school projects can be very complex, require innovation and ingenuity, and provide a good showcase for your skills.
+
+In other cases, you might decide to reach outside your school experiences. Perhaps you worked for a non-profit for a summer building low-income housing. That might constitute an excellent "project" even though there’s no code associated with it, if you acquired significant project management or "maker" skills or whatever from the experience.
+
+Game play can potentially yield a project (but be careful with this one!). For example, if you built some kind of substantial environment in Minecraft, that could certainly qualify as a project if it demonstrates your artistic and/or other kinds of skills.
+
+If you worked on an art project or a music project or a video project that took a substantial amount of time and that helped you develop a technical or aesthetic capability, then that might be a good subject for a project.
+
+Note that when you first develop a professional portfolio, you are bootstrapping with the three best projects you can find from your background. Part of your ongoing professional development will be to "cultivate" your project page: adding new projects, and maybe removing others as you decide they are no longer "over threshold" as representations of your accomplishments. 

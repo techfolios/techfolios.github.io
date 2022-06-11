@@ -1,10 +1,16 @@
 ## To Do
 
-* Create pmj portfolio
-  * project_url, CV
+PMJ: customize resume page
+
+Template fixes:
+  * essay-1 to essay, project-1 to project.
+  * fluid height of essays
+  * essayurl and projecturl processing (with testing)
+  * change date location in project card.
+
+Other stuff:
 * Create kaj portfolio
 * Create Gallery page
-* Get rid of _config.yml vars for cv stuff.
 
 Misc:
 * Fix OG values
