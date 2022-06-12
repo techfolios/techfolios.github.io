@@ -1,9 +1,8 @@
 ## To Do
 
 Other stuff:
-* Document projecturl and essayurl
 * Create kaj portfolio
-* Create Gallery page
+* Update gallery page
 
 Misc:
 * Fix OG values
