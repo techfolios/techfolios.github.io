@@ -28,8 +28,26 @@ Unzip the backup file so that you can get at your bio.json file, your project fi
 
 First, update the bio.json file in your new repo with the bio.json file from your backup.  Check to see that the resume page displays correctly. There have not been any changes to the format of bio.json, so there should not be any problems with this step.
 
-Next, migrate your essays and projects from the backup to your new site. If you have used Semantic UI CSS classes for things like display of images, then you will need to update that code to use Bootstrap 5.  Consult this User Guide for details.
+Next, migrate your essays and projects from the backup to your new site. Here are the steps:
+
+First, copy all your images from the "/images" directory in your old site to the "/img" directory in the new site.
+
+Next, in the projects/ and essays/ directories, do a global search-and-replace of "/images" to "/img".
+
+Next, you will need to change any uses of Semantic UI CSS classes to Bootstrap 5 CSS classes. For example, for small images, try something similar to: 
+
+```html
+<img width="200px" 
+     class="rounded float-start pe-4" 
+     src="../img/difficulty/degree_difficulty.jpg">
+```
+
+For full-width images, try something like:
+```html
+<img class="img-fluid" 
+     src="../img/manoa_dining_landing.jpg">
+```
 
 ## Commit your changes
 
-Once your portfolio displays correctly in your browser, then use GitHub Desktop to commit your changes to GitHub. This will trigger a GitHub action to rebuild and redeploy your site.  Enjoy!
+Once your portfolio displays correctly in your browser, then use GitHub Desktop to commit your changes to GitHub. This will trigger a GitHub action to rebuild and redeploy your site.  Enjoy your new portfolio!

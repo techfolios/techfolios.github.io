@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TechFolios',
-  tagline: 'Easily create technical portfolios using GitHub Pages, Jekyll, Bootstrap 5, and JSON Resume.',
+  tagline: 'Easily create technical portfolios using GitHub Pages, Jekyll, Bootstrap, and JSON Resume.',
   url: 'https://techfolios.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',

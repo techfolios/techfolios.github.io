@@ -27,6 +27,7 @@ const sidebars = {
         'user-guide/local-development',
         'user-guide/anatomy-of-bio-json',
         'user-guide/formatting',
+        'user-guide/project-and-essay-url',
         'user-guide/essay-and-project-tips',
         'user-guide/customize-theme',
         'user-guide/customize-layout',

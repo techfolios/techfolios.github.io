@@ -12,7 +12,7 @@ Here's a few of the most useful concepts to get you started.
 
 To create an H1 header, use `#`.  To italicize a word, surround it with `*`. To create a link, start by enclosing the link label in `[]` and follow it with the URL in `()`.  Here are examples:
 
-```
+```markdown
 # Section 1
 ## Section 1.1
 
@@ -33,7 +33,7 @@ You can insert images using the plain old `<img>` HTML tag, but you can control 
 
 The [Template essay on difficulties](https://techfolios.github.io/template/essays/difficulty.html) illustrates how to float an image to the left side of the text. Here is the code used to float the "difficulty gauge" image:
 
-```
+```html
 <img width="200px" 
      class="rounded float-start pe-4" 
      src="../img/difficulty/degree_difficulty.jpg" >
@@ -46,7 +46,7 @@ Note that this example not only floats the image to the left (via "float-start")
 
 The [Micromouse Project Page](http://techfolios.github.io/template/projects/micromouse) illustrates a simple way to provide a group of images with similar formatting. In this case, all the images have the same size and rounded corners. Here's the code that produced that format:
 
-```
+```html
 <div class="text-center p-4">
   <img width="200px" 
        src="../img/micromouse/micromouse-robot.png" 
@@ -66,6 +66,13 @@ In the template portfolio, a top-level `img/` directory holds all the image file
 
 ## Format video
 
-The [Bootstrap 5 ratio helper](https://getbootstrap.com/docs/5.0/helpers/ratio/) can be used in combination with the iframe element to embed video into your page. 
+The [Bootstrap 5 ratio helper](https://getbootstrap.com/docs/5.0/helpers/ratio/) can be used in combination with the iframe element to embed video into your page. For example:
 
-The [Hackystat Project Page](http://philipmjohnson.org/projects/hackystat) illustrates an embedded video.
+```html
+<div class="ratio ratio-4x3 my-4">
+  <iframe src="https://www.youtube.com/embed/NrLFIpm0wps" 
+          title="Overview of Hackystat" 
+          allowfullscreen>
+  </iframe>
+</div>
+```
