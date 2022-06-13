@@ -2,7 +2,7 @@
 title: V2 Migration
 ---
 
-If you already have a professional portfolio built with TechFolios prior to June 2022, then you might want to migrate over to Version 2 in order to take advantage of the [improvements in TechFolios 2](/blog/2022/06/15/version-2). 
+If you already have a professional portfolio built with TechFolios prior to June 2022, then you might want to migrate over to Version 2 in order to take advantage of the [improvements in TechFolios 2](/blog/2022/06/13/techfolios-2). 
 
 Here are the steps:
 
