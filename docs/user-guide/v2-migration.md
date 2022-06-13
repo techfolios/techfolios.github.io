@@ -8,7 +8,7 @@ Here are the steps:
 
 ## Backup your portfolio source files
 
-First, go to your current TechFolio GitHub repository home page, click on the green "Code" button, and select "Download ZIP". This will download a zip file containing the source files for your current portfolio to your computer.
+First, go to your current TechFolio GitHub repository home page, and **make sure you are viewing the "master" branch.** Then, click on the green "Code" button, and select "Download ZIP". This will download a zip file containing the source files for your current portfolio to your computer.
 
 ## Delete your TechFolio repository
 

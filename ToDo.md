@@ -1,5 +1,10 @@
 ## To Do
 
+KAJ:
+  * Provide resources/ dir with CV.
+  * CNAME shenanigans
+
+
 Other stuff:
 * Create kaj portfolio
 * Update gallery page
