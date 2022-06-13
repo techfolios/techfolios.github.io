@@ -18,7 +18,7 @@ A summary of the improvements in TechFolios 2 include:
   6. [Open Graph](https://ogp.me/) meta-data to improve URL display.
   7. Simplified theming using [Bootstrap CSS variables](https://getbootstrap.com/docs/5.2/customize/css-variables/).
 
-We believe this creates a firm foundation for the next 7 years and two thousand developers!
+We believe this creates a firm foundation for the next 7 years and the next two thousand developers!
 
 If you are new to TechFolios, you can get started following the instructions in the [Quick Start](../../../../../docs/quick-start/overview).
 
