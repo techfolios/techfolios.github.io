@@ -26,7 +26,7 @@ First, go to [https://github.com/techfolios/template](https://github.com/techfol
 
 ![](/img/quickstart/template-page.png)
 
-Click the `Use this template` button. Select your account as the "Owner", and specify the repository name as your account name plus ".github.io". It should look like this:
+Click the `Use this template` button. (If you don't see the "Use this template" button, make sure you are signed in to GitHub.) Select your account as the "Owner", and specify the repository name as your account name plus ".github.io". It should look like this:
 
 ![](/img/quickstart/create-repository.png)
 
