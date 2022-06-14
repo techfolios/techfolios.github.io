@@ -84,7 +84,7 @@ So, to create your own custom layout, you can do two things:
 
 It is possible to add fields to bio.json without violating the schema.  In some cases, a good way to implement your customization is by first extending the bio.json format in a backward compatible manner, then creating a custom layout that accesses these additional fields.
 
-An example of this approach is [Philip Johnson's CV page](https://philipmjohnson.github.io/cv.html).  This page provides separate sections for various forms of publications (i.e. journals, conferences, etc.) as well as a separate section listing awards that are grants.  To implement this approach, [Philip's bio.json](https://github.com/philipmjohnson/philipmjohnson.github.io/blob/master/_data/bio.json) extends the default bio.json format with additional fields, and then his template checks for those fields when laying out the page.
+An example of this approach is [Philip Johnson's CV page](https://philipmjohnson.github.io/cv.html).  This page provides separate sections for various forms of publications (i.e. journals, conferences, etc.) as well as a separate section listing awards that are grants.  To implement this approach, [Philip's bio.json](https://github.com/philipmjohnson/philipmjohnson.github.io/blob/main/_data/bio.json) extends the default bio.json format with additional fields, and then his template checks for those fields when laying out the page.
 
 ## Custom layout examples
 
