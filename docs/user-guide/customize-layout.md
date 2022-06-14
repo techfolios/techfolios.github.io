@@ -29,8 +29,8 @@ layout: home
 ---
 
 {% include about/about.html %}
-{% include projects/projects.html %}
-{% include essays/essays.html %}
+{% include projects/projects.html limit=4 %}
+{% include essays/essays.html limit=6 %}
 ```
 
 It specifies that the layout for this page is "home", which is located in `_layouts/home.html`:
@@ -49,8 +49,8 @@ This layout specifies yet another layout ("default", which we won't show but pro
 ```yaml
 {% include header.html %}
 {% include about/about.html %}
-{% include projects/projects.html %}
-{% include essays/essays.html %}
+{% include projects/projects.html limit=4 %}
+{% include essays/essays.html limit=6 %}
 {% include footer.html %}
 ```
 
@@ -66,7 +66,7 @@ The "layout" files allow you to flexibly compose and organize bits of HTML, whic
       <ul class="navbar-nav mb-2 mb-lg-0">
         <a class="nav-link" href="{{ '/#projects' | prepend: site.baseurl }}">Projects</a>
         <a class="nav-link" href="{{ '/#essays' | prepend: site.baseurl }}">Essays</a>
-        <a class="nav-link" href="{{ '/bio/' | prepend: site.baseurl }}">{{ site.bio-page-title }}</a>
+        <a class="nav-link" href="{{ '/bio/' | prepend: site.baseurl }}">Resume</a>
       </ul>
     </div>
   </div>
@@ -84,7 +84,7 @@ So, to create your own custom layout, you can do two things:
 
 It is possible to add fields to bio.json without violating the schema.  In some cases, a good way to implement your customization is by first extending the bio.json format in a backward compatible manner, then creating a custom layout that accesses these additional fields.
 
-An example of this approach is [Philip Johnson's CV page](https://philipmjohnson.github.io/bio/).  This page provides separate sections for various forms of publications (i.e. journals, conferences, etc.) as well as a separate section listing awards that are grants.  To implement this approach, [Philip's bio.json](https://github.com/philipmjohnson/philipmjohnson.github.io/blob/master/_data/bio.json) extends the default bio.json format with additional fields, and then his template checks for those fields when laying out the page.
+An example of this approach is [Philip Johnson's CV page](https://philipmjohnson.github.io/cv.html).  This page provides separate sections for various forms of publications (i.e. journals, conferences, etc.) as well as a separate section listing awards that are grants.  To implement this approach, [Philip's bio.json](https://github.com/philipmjohnson/philipmjohnson.github.io/blob/master/_data/bio.json) extends the default bio.json format with additional fields, and then his template checks for those fields when laying out the page.
 
 ## Custom layout examples
 
@@ -92,7 +92,40 @@ Here are some examples of custom layouts.
 
 ### Katie Amberg-Johnson
 
+![](/img/gallery/kambergjohnson-com.png)
+
+This portfolio customizes the default template in the following ways:
+
+* About section is modified to put the summary paragraph below the headshot and network icons.
+* A new section called "Papers" provides access to publications.
+* A new "About" page provides a brief biographical sketch.
+* The navbar has a "CV" link that goes directly to a PDF version of the CV. There is no HTML page.
+* The site is available at a custom domain (kambergjohnson.com).
+
+Yes, in case you were wondering at the resemblence, Katie agreed to allow her headshot to be used for the Molly Maluhia template!
+
+Source code: https://github.com/kambergjohnson/kambergjohnson.github.io
+
+Live site: https://kambergjohnson.com
+
 ### Philip Johnson
+
+![](/img/gallery/philipmjohnson.png)
+
+This portfolio customizes the default template in the following way:
+
+* The headshot is smaller, and the Interests and Network icons are full-width and below the picture and summary.
+* There are more than 4 projects and 6 essays, illustrating the (built-in) "See all" feature for projects and essays.
+* The site provides a curriculum vitae rather than a resume. This is implemented by:
+    * Extensions to bio.json to include publications.
+    * A new cv.html page to replace resume.html.
+    * Modifications to header.html to provide "CV" as the label which links to the cv.html page.
+* The projecturl and essayurl features are used to link to external sites in some cases.
+* The site is available at a custom domain (philipmjohnson.org).
+
+Source code: https://github.com/philipmjohnson/philipmjohnson.github.io
+
+Live site: https://philipmjohnson.org
 
 ## Show us what you got!
 
