@@ -100,6 +100,20 @@ There are two reasons it is useful to know how to monitor the build:
 Also, please note that the very first time you try to build your portfolio, it takes about five minutes, which is a long time!  Don't worry, though: after this very first build, GitHub will cache the build artifacts and your future builds should take less than a minute to complete.
 :::
 
+:::warning Oh no! My very first build failed!
+Unfortunately, some users have reported that their first build failed with an error like this:
+
+```
+error: RPC failed; curl 55 Failed sending HTTP2 data
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+```
+
+This is not your fault (or ours): it means that there was a network connection problem on GitHub's side that resulted in a timeout.  In our experience, all you have to do is re-trigger the build one more time. (You can do this by editing the `_config.yml` file and adding a space or newline, then committing the change). 
+
+The good news is that the files retrieved over the network for the first build are cached for the future, so it is unlikely you'll run into this particular error again upon subsequent builds of your portfolio.
+:::
+
 ## Set gh\_pages
 
 The above build process has created a new branch in your repo called "gh_pages".  Now you need to tell the GitHub Pages mechanism that this is where to look for your professional portfolio files. To do this, click on the "Settings" tab, and then on the "Pages" tab. This will take you to the following page:
