@@ -127,6 +127,19 @@ Source code: https://github.com/philipmjohnson/philipmjohnson.github.io
 
 Live site: https://philipmjohnson.org
 
+## Developing from a custom layout
+
+If you find that one of the above custom layout portfolio examples align more closely with your needs than the default template, then you might want to base your portfolio off it rather than the default template. Here's how you might do it:
+
+  1. Follow the [Initialization](../quick-start/initialization) steps, which have you build and deploy the default template as your own portfolio.
+  2. Follow the instructions in [Tool Installation](tool-installation) and [Local Development](local-development) to set up your computer for local development. 
+  3. Go to the GitHub repo for the custom layout portfolio, make sure you are in the "main" branch, then click on "Code", and then "Download ZIP". You'll now have a ZIP file containing the contents of the custom layout. 
+  4. Replace your portfolio files by the custom layout portfolio files. 
+  5. Edit the first section of `_config.yml` to correspond to your portfolio.
+  6. Build and run your portfolio locally. It should now look like the custom portfolio. 
+  7. Edit the bio.json, projects, essays, and other files to reflect your own work.
+  8. Push your portfolio to GitHub to publish it.
+
 ## Show us what you got!
 
 If you come up with an interesting layout, please contact us via the [Help](../help) page. Perhaps we'd like to showcase your work in our [Gallery](../gallery.md)!
