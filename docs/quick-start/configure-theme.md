@@ -11,7 +11,7 @@ The default theme associated with the template uses the Open Sans font and a few
 
 ![](/img/quickstart/css-techfolio-theme-dir.png)
 
-At the time of writing, there are four pre-built themes available: "bitter.css", "default.css", "lime.css", and "rubik.css".
+At the time of writing, there are five pre-built themes available: "bitter.css", "default.css", "lime.css", "skyblue.css", and "rubik.css".
 
 The `_config.yml` file contains a line that specifies the theme associated with a portfolio. By default, it's "default.css":
 
@@ -27,17 +27,23 @@ This theme changes the font to "Bitter":
 
 ![](/img/quickstart/theme-bitter.png)
 
+## rubik.css
+
+This theme changes just the header text to use the chunkier Rubik font:
+
+![](/img/quickstart/theme-rubik.png)
+
 ## lime.css
 
 This theme injects a wee bit of green into the theme:
 
 ![](/img/quickstart/theme-lime.png)
 
-## rubik.css
+## skyblue.css
 
-This theme changes just the header text to use the chunkier Rubik font:
+This theme injects some blue into the theme:
 
-![](/img/quickstart/theme-rubik.png)
+![](/img/user-guide/theme-skyblue.png)
 
 ## Roll your own
 

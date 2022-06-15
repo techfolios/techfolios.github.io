@@ -4,11 +4,11 @@ title: Customize theme
 
 The Quick Start discusses how to [configure the theme](../quick-start/configure-theme) using one of the pre-built themes in the `css/techfolio-template/` directory.
 
-But what if none of these pre-built themes works for you? What if you want a different color(s), or font(s), or want them applied to your portfolio in a different way?  If this is your goal, you need to create your own custom theme.  Let's walk through a simple example.
+But what if none of these pre-built themes works for you? What if you want a different color(s), or font(s), or want them applied to your portfolio in a different way?  If this is your goal, you need to create your own custom theme.  Let's walk through a simple example which illustrates how I developed the skyblue.css theme that is now included with the template.
 
-## Create your custom theme file
+## Create a custom theme file from an existing theme
 
-The first step in developing your own custom theme file is to create a new file in your portfolio's `css/techfolio-template` directory. It's easiest to take one of the existing pre-built themes as a starting point. For the purposes of this example, I'll create a copy of lime.css called skyblue.css in that same directory. 
+The first step in developing your own custom theme file is to create a new file in your portfolio's `css/techfolio-template` directory. It's easiest to take one of the existing pre-built themes as a starting point. For the purposes of this example, I'll create a copy of lime.css named skyblue.css in that same directory. 
 
 Skyblue.css starts off looking like this:
 
@@ -51,7 +51,7 @@ a {
 }
 ```
 
-## Use your custom theme file 
+## Edit `_config.yml` to use your custom theme 
 
 Next, edit your _config.yml file to specify your new theme file:
 
@@ -106,7 +106,7 @@ a {
 
 ## Modify headline font
 
-Finally, I rather liked the Rubik font from the pre-built theme, so I'll copy over the definition and use of that font into my skyblue theme. Here's the final theme definition file:
+Next, I rather liked the Rubik font from the pre-built theme, so I'll copy over the definition and use of that font into my skyblue theme. Here's the updated theme definition file:
 
 ```css
 /* Skyblue Theme: modifies the default theme to use blue in various places. */
@@ -146,6 +146,18 @@ h1,h2,h3,h4,h5 {
 
 a {
   text-decoration: none;
+}
+```
+
+## Outline the headshot in blue
+
+Finally, let's add an outline color to the headshot.  Using [Chrome DevTools](https://developer.chrome.com/docs/devtools/), I inspected the headshot area of the page to learn that it is formatted using the `rounded-circle` class. So, I added a blue border color to that class in skyblue.css:
+
+```css
+.rounded-circle {
+  border-color: var(--tf-blue1);
+  border-style: solid;
+  border-width: 1px;
 }
 ```
 

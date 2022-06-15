@@ -39,9 +39,8 @@ Live site: https://philipmjohnson.org
 
 This portfolio customizes the default template in the following way:
 
-* Provides a custom theme, "skyblue.css" that adds blue highlights in various places and changes the header font to Rubik.
-* Reformats the "About" area---smaller picture, col-4-lg for picture and col-8-lg for text.
-* Removed essays and awards.
+* Uses the skyblue.css theme.
+* Removes essays and awards.
   
 Source code: https://github.com/cammoore/cammoore.github.io
 
