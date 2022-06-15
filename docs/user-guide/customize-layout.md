@@ -127,6 +127,19 @@ Source code: https://github.com/philipmjohnson/philipmjohnson.github.io
 
 Live site: https://philipmjohnson.org
 
+### Cam Moore
+
+![](/img/gallery/cammoore.png)
+
+This portfolio customizes the default template in the following way:
+
+* Provides a custom theme, "skyblue.css" that adds blue highlights in various places and changes the header font to Rubik.
+* Removed essays and awards.
+
+Source code: https://github.com/cammoore/cammoore.github.io
+
+Live site: https://cammoore.github.io
+
 ## Developing from a custom layout
 
 If you find that one of the above custom layout portfolio examples align more closely with your needs than the default template, then you might want to base your portfolio off it rather than the default template. Here's how you might do it:

@@ -2,7 +2,7 @@
 title: Gallery
 ---
 
-This page contains some sample sites built using TechFolios that you can use for inspiration.
+This page contains some sample sites built using TechFolios that you can use for inspiration. Note that the sites may have evolved since the time that the snapshot was taken! 
 
 ## Molly Maluhia
 
@@ -32,6 +32,20 @@ This portfolio customizes the default template in the following way:
 Source code: https://github.com/philipmjohnson/philipmjohnson.github.io
 
 Live site: https://philipmjohnson.org
+
+## Cam Moore
+
+![](/img/gallery/cammoore.png)
+
+This portfolio customizes the default template in the following way:
+
+* Provides a custom theme, "skyblue.css" that adds blue highlights in various places and changes the header font to Rubik.
+* Reformats the "About" area---smaller picture, col-4-lg for picture and col-8-lg for text.
+* Removed essays and awards.
+  
+Source code: https://github.com/cammoore/cammoore.github.io
+
+Live site: https://cammoore.github.io
 
 ## Katie Amberg-Johnson
 
