@@ -44,6 +44,14 @@ Now let's fix the "About" section to link to your portfolio. Click on the gear i
 
 After saving the changes, you'll have a convenient link to your professional portfolio on the home page for this repo.
 
+## Set workflow permissions to "Read and write"
+
+Now click on the Settings tab near the top of the window, then Actions and General in the left sidebar to display the Actions permissions page:
+
+![](/img/quickstart/action-permissions.png)
+
+Check that Workflow permissions is set to "Read and write permissions". If not, click the radio button and press "Save".
+
 ## Configure `_config.yml`
 
 Now that your repository is set up, we can start editing the template files to make this professional portfolio your own.
