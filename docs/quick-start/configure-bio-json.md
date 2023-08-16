@@ -24,7 +24,7 @@ Click on the "Edit" link and select "Upload a photo...".  Select the file from y
 
 ![](/img/quickstart/change-avatar3.png)
 
-When you have finished the upload process, GitHub will provide a link to your profile picture as "https://github.com/USERNAME.png", where USERNAME is your GitHub username.  For example, here's "https://github.com/philipmjohnson.png":
+When you have finished the upload process, GitHub will provide a link to your profile picture as "https://github.com/USERNAME.png", where USERNAME is your GitHub username.  For example, here's <https://github.com/philipmjohnson.png>:
 
 ![](/img/quickstart/change-avatar4.png)
 
