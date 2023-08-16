@@ -7,6 +7,5 @@ The User Guide is for those who have already gone through the [Quick Start](../q
 
 You'll learn:
 
-  * How to install GitHub Desktop, Jekyll, and an editor.
-  * How to run TechFolios locally in order to make changes and see the results instantly.
+  * How to develop your professional portfolio in the cloud (preferred) or locally. 
   * The features of Markdown, Jekyll, and Bootstrap that can make your portfolio shine. 
