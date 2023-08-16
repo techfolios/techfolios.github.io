@@ -25,6 +25,7 @@ const sidebars = {
         'user-guide/overview',
         'user-guide/tool-installation',
         'user-guide/local-development',
+        'user-guide/cloud-development',
         'user-guide/anatomy-of-bio-json',
         'user-guide/formatting',
         'user-guide/project-and-essay-url',

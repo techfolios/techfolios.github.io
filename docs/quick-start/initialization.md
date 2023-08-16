@@ -22,15 +22,19 @@ Before proceeding, [login](http://github.com/login) to your GitHub account.
 
 In this step, you'll make your personal copy of the TechFolio template.
 
+:::warning Your screens may look a little different
+GitHub makes changes to their user interface quite frequently. We try to keep these screenshots up to date, but your browser might display something slightly different. Let us know if things look **really** different.
+:::
+
 First, go to [https://github.com/techfolios/template](https://github.com/techfolios/template):
 
 ![](/img/quickstart/template-page.png)
 
-Click the `Use this template` button. (If you don't see the "Use this template" button, make sure you are signed in to GitHub.) Select your account as the "Owner", and specify the repository name as your account name plus ".github.io". It should look like this:
+Click the `Use this template` button, then select "Create a new repository". (If you don't see the "Use this template" button, make sure you are signed in to GitHub.) Select your account as the "Owner", and specify the repository name as your account name plus ".github.io". It should look similar to this:
 
 ![](/img/quickstart/create-repository.png)
 
-Then press the `Create repository from template` button. GitHub will make a new copy of the template in your account and display a page like this:
+Then press the `Create repository` button. GitHub will make a new copy of the template in your account and display a page like this:
 
 ![](/img/quickstart/template-copy.png)
 
@@ -69,7 +73,7 @@ Edit `title:` to specify your own name, edit `url:` to specify your portfolio, a
 
 ![](/img/quickstart/config-yml-edit2.png)
 
-Scroll to the bottom of this page and click "Commit changes" to save these changes.
+Click "Commit changes" to save these changes. (It will pop up a dialog box, just click "Commit Changes" again to confirm.)
 
 ## Monitor the build
 
@@ -80,6 +84,10 @@ First, click on the "Actions" label on the home page of your repository.  That w
 ![](/img/quickstart/actions-page.png)
 
 This page indicates that two GitHub Actions (i.e. "workflows") named "pages-build-deployment" have previously run and completed successfully (indicated by the green checkmarks).  There is a workflow called "Jekyll Deploy" that is running right now (indicated by the yellow dot).  GitHub labels this workflow execution instance using the commit message associated with the change to the repository that triggered the Action. In this case, it was "Update _config.yml".
+
+:::warning Your action name may differ
+GitHub occasionally changes the name of their build actions. 
+:::
 
 You can watch the build in more detail by clicking on the "Update _config.yml" line, which takes you to a page like this:
 
