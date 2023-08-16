@@ -6,7 +6,7 @@ title: Cloud development
 
 The easiest way to develop and maintain your TechFolio portfolio is with [GitPod](https://gitpod.io), a cloud-based service. This avoids the need to install an editor, a git client, and Jekyll on your laptop. (We will cover this "local development" approach in the next section.)
 
-Before starting this section, we assume you have already completed the [QuickStart: Initialization](../quick-start/initialization.html) section, so that you have a running version of a portfolio in your GitHub account. (The portfolio doesn't need to have the right contents, just be configured to build correctly.)
+Before starting this section, we assume you have already completed the [QuickStart: Initialization](/docs/quick-start/initialization.html) section, so that you have a running version of a portfolio in your GitHub account. (The portfolio doesn't need to have the right contents, just be configured to build correctly.)
 
 ### Initial setup
 
@@ -78,4 +78,56 @@ Now, to run the build, I type `bundle exec jekyll serve` and hit return. In this
 
 ![](/img/user-guide/cloud-11.png) 
 
-Click "Open Browser" to open the portfolio in a new browser tab, or if you already have it displayed, just refresh that page. Either way, you will see your revised version. For example, here is my portfolio with the new interest:
+#### 3. Preview
+
+Click "Open Browser" to open the portfolio in a new browser tab, or if you already have it displayed, just refresh that page. Either way, you will see a "preview" of your revised version. By "preview", I mean a version of your portfolio that only you can see--it is not publicly available yet.
+
+For example, here is my portfolio with the new interest:
+
+![](/img/user-guide/cloud-12.png) 
+
+:::tip Pro Tip
+In Unix `control-P` recalls the last command and places it onto the command line. So, you can type `control-c control-p return` to quickly stop the running build and restart a new one.
+:::
+
+#### 4. Debug
+
+Sometimes you make edits that "break the build".  For example, let's say that I added my community gardening interest as the last line of the file:
+
+![](/img/user-guide/cloud-13.png) 
+
+If I now type `control-c control-p return` in the Terminal window, I get the following error message:
+
+![](/img/user-guide/cloud-14.png) 
+
+As you can see, there's no "Running server" message, just a bunch of gobbledy-gook.
+
+At this point, the best thing to do is to scroll back through the error log to see if something useful appears. In this case, scrolling back reveals an  error message:
+
+![](/img/user-guide/cloud-15.png) 
+
+Aha! There is a problem with the Interests section: it appears that the parser was expecting a "," but did not find it. In fact, there is a missing comma on the line with the Educational Technology interest. If I add a comma to that line, and then type `control-c control-p return`, the build runs successfully and refreshing my browser window shows the reordered list of Interests:
+
+![](/img/user-guide/cloud-16.png) 
+
+#### 5. Publish
+
+Once you've edited, built, previewed, and debugged your portfolio for a while, you will want to publish it so that others can see it. 
+
+To do that, click on the "Source Control" icon on the left side of the screen. It should have a circle with a number in it indicating the edits you have made. After clicking the icon, the Source Control window is displayed. For example:
+
+![](/img/user-guide/cloud-17.png) 
+
+It shows that two files were modified. Type a short message into the Message text field to document what you did (for example, "Fix Interests"), the click the dropdown icon on the Commit button to display some options:
+
+![](/img/user-guide/cloud-18.png)
+
+Select either "Commit and Push" or "Commit and Sync". Quite quickly, the Commit button will be grayed out, because you have no edits that have not been committed. 
+
+If you now go to GitHub and click on the Actions pane associated with your portfolio, you will see that the result of "committing and pushing" is to trigger a build of your portfolio.  Once that completes, the public portfolio site should display your updated portfolio. For example:
+
+![](/img/user-guide/cloud-19.png)
+
+## But I don't like the cloud!
+
+If you don't want to go this route, then the next section explains how to install and develop your portfolio locally.

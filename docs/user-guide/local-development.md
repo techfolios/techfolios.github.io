@@ -2,9 +2,49 @@
 title: Local development
 ---
 
+## Local Development
+
+While cloud-based development is the best choice for most people, some might want to install tools locally and do their development there. If you choose this page, here are the steps:
+
+### Install GitHub Desktop (or another git client)
+
+If you are using MacOS or Windows, the easiest way to manage your portfolio repository is with [GitHub Desktop](https://desktop.github.com/).  GitHub Desktop provides an extremely easy way to download your portfolio files from GitHub to your computer for editing, and then push the files back to GitHub for deployment once you're ready for that to happen.
+
+If you are using Linux, then you will need to install a different git client. If you are using Linux, you probably know this already and already have a git client installed.
+
+### Install an editor
+
+You cannot use a word processor like Microsoft Word to edit your professional portfolio.  Instead, you need a text editor such as Emacs, Vim, IntelliJ IDEA, Microsoft Visual Studio, Eclipse, Atom, or similar.
+
+Please be sure to install a text editor on your computer.  Any one will do.
+
+### Install Jekyll
+
+The final step is to [install Jekyll](https://jekyllrb.com/docs/installation/). Jekyll runs on all platforms.
+
+To verify that you've installed Jekyll correctly, please go through the [Jekyll Quickstart](https://jekyllrb.com/docs/) instructions to be sure that you can create a simple Jekyll site and display it on your computer.
+
+:::warning You need to run `bundle add webrick`
+The Jekyll documentation for the Quick Start notes that "Step 5 may fail".  Yes, it almost certainly will.  As instructed, go ahead and run:
+
+```sh
+bundle install webbrick
+```
+
+Then run `bundle exec jekyll serve` and things should work correctly.
+:::
+
+If you have followed the Quickstart instructions successfully, then you should be able to go to http://127.0.0.1:4000/ and see the following page:
+
+![](/img/user-guide/jekyll-quick-start-page.png)
+
+Make sure you can see this page after running `bundle exec jekyll serve`.  Once you can, then you know you have successfully installed Jekyll.
+
+Now that you have GitHub Desktop, an editor, and Jekyll, let's see how to build and view your professional portfolio locally.
+
 ## Clone your repo
 
-The first step in setting up local development is to "clone" the GitHub repository containing your professional portfolio source files to your computer. To do this, go to your repo, click on "Code", and then select "Open with GitHub Desktop":
+The next step in setting up local development is to "clone" the GitHub repository containing your professional portfolio source files to your computer. To do this, go to your repo, click on "Code", and then select "Open with GitHub Desktop":
 
 ![](/img/user-guide/portfolio-download-desktop.png)
 
@@ -17,6 +57,8 @@ That will bring up GitHub Desktop, which will ask you where in your file system 
 Adjust the "Local Path" to your liking, then click "Clone" to create a copy of your repository on your computer. You will now have a local directory containing files similar to this:
 
 ![](/img/user-guide/local-repo-dir.png)
+
+
 
 ## Install libraries
 
