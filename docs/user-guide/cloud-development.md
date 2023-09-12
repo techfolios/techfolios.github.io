@@ -124,10 +124,24 @@ It shows that two files were modified. Type a short message into the Message tex
 
 Select either "Commit and Push" or "Commit and Sync". Quite quickly, the Commit button will be grayed out, because you have no edits that have not been committed. 
 
-If you now go to GitHub and click on the Actions pane associated with your portfolio, you will see that the result of "committing and pushing" is to trigger a build of your portfolio.  Once that completes, the public portfolio site should display your updated portfolio. For example:
+:::warning GitPod won't give me the option to push or sync!
+If this is the first time you are using GitPod, you have to explicitly give it permission to push or sync code to your GitHub repo in order for the "Commit and Push" or "Commit and Sync" menu items to appear. 
+
+To give GitPod permission to modify your GitHub account:
+
+1. Click on the avatar associated with you at the top right of the page to pull down a menu of items, then select "User Settings" to go to the User Settings page.
+2. On the left side menu, select "Git Providers" to go to the Git Providers page.
+3. Click on the three vertical dots next to GitHub, then select "Edit Permissions" to bring up the Edit permissions dialog.
+4. Make sure all possible permissions are checked, then click "Update Permissions".
+
+:::
+
+Once you have successfully invoked "Commit and Push" or "Commit and Sync",  you can now go to GitHub and click on the Actions pane associated with your portfolio. 
+
+You will see that the result of either of those actions is to trigger a build of your portfolio.  Once that completes, the public portfolio site should display your updated portfolio. For example:
 
 ![](/img/user-guide/cloud-19.png)
 
 ## But I don't like the cloud!
 
-If you don't want to go this route, then the next section explains how to install and develop your portfolio locally.
+If, for some reason, you don't want to use GitPod, the next section explains how to install and develop your portfolio locally.
