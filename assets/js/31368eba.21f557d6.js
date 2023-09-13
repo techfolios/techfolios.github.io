@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktechfolios=self.webpackChunktechfolios||[]).push([[6214],{8646:function(e){e.exports=JSON.parse('{"label":"presentation","permalink":"/blog/tags/presentation","allTagsPath":"/blog/tags","count":1}')}}]);

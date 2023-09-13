@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktechfolios=self.webpackChunktechfolios||[]).push([[4451],{9550:s=>{s.exports=JSON.parse('{"label":"bug","permalink":"/blog/tags/bug","allTagsPath":"/blog/tags","count":1}')}}]);

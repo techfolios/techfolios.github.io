@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktechfolios=self.webpackChunktechfolios||[]).push([[4325],{8811:function(s){s.exports=JSON.parse('{"label":"workshop","permalink":"/blog/tags/workshop","allTagsPath":"/blog/tags","count":1}')}}]);

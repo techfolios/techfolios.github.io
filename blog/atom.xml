@@ -9,7 +9,7 @@
     <icon>https://techfolios.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[TechFolios 2]]></title>
-        <id>/2022/06/13/techfolios-2</id>
+        <id>https://techfolios.github.io/blog/2022/06/13/techfolios-2</id>
         <link href="https://techfolios.github.io/blog/2022/06/13/techfolios-2"/>
         <updated>2022-06-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The TechFolios team is pleased to announce a new major release of TechFolios.  Since its initial release almost 7 years ago, TechFolios has been used by almost 2,000 software developers to create their professional portfolio. We've taken our experience over the years into account when designing this release which we believe provides a significantly improved experience for users.]]></summary>
@@ -22,11 +22,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Techfolio Designer]]></title>
-        <id>techfolio-designer</id>
+        <id>https://techfolios.github.io/blog/techfolio-designer</id>
         <link href="https://techfolios.github.io/blog/techfolio-designer"/>
         <updated>2018-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Techfolio Designer has not been updated to work with Techfolios Version 2]]></summary>
-        <content type="html"><![CDATA[<div class="admonition admonition-warning alert alert--danger"><div class="admonition-heading"><h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>warning</h5></div><div class="admonition-content"><p>Techfolio Designer has not been updated to work with Techfolios Version 2</p></div></div><p>We are delighted to announce the initial release of TechFolio Designer: a cross-platform, desktop application designed exclusively for the development of TechFolio professional portfolios.</p><p>If you have problems, questions, or want to get involved, please contact Philip Johnson (<a href="mailto:johnson@hawaii.edu" target="_blank" rel="noopener noreferrer">johnson@hawaii.edu</a>).</p><p>If you are a student at the University of Hawaii and want to get course credits during Fall of 2018 to work (in part) on TechFolio Designer, please check out the <a href="http://philipmjohnson.org/ics491f18/" target="_blank" rel="noopener noreferrer">ICS 491, Fall 2018 Class Description</a>.</p>]]></content>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-warning alert alert--danger admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_S0QG"><p>Techfolio Designer has not been updated to work with Techfolios Version 2</p></div></div><p>We are delighted to announce the initial release of TechFolio Designer: a cross-platform, desktop application designed exclusively for the development of TechFolio professional portfolios.</p><p>If you have problems, questions, or want to get involved, please contact Philip Johnson (<a href="mailto:johnson@hawaii.edu" target="_blank" rel="noopener noreferrer">johnson@hawaii.edu</a>).</p><p>If you are a student at the University of Hawaii and want to get course credits during Fall of 2018 to work (in part) on TechFolio Designer, please check out the <a href="http://philipmjohnson.org/ics491f18/" target="_blank" rel="noopener noreferrer">ICS 491, Fall 2018 Class Description</a>.</p>]]></content>
         <author>
             <name>Philip Johnson</name>
             <uri>https://philipmjohnson.org</uri>
@@ -35,7 +35,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Syntax highlighting fix]]></title>
-        <id>syntax-highlighting-fix</id>
+        <id>https://techfolios.github.io/blog/syntax-highlighting-fix</id>
         <link href="https://techfolios.github.io/blog/syntax-highlighting-fix"/>
         <updated>2017-12-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[There has been a longstanding bug in Techfolios which prevented fenced code blocks from being highlighted.]]></summary>
@@ -48,7 +48,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[TechFolio Workshops]]></title>
-        <id>workshops-2016</id>
+        <id>https://techfolios.github.io/blog/workshops-2016</id>
         <link href="https://techfolios.github.io/blog/workshops-2016"/>
         <updated>2016-10-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The Department of Information and Computer Sciences is delighted to announce a three part workshop on developing a professional portfolio. These workshops will be held on Wednesday, November 2, 9, and 16, from 430pm.]]></summary>
@@ -61,7 +61,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Release 1.1]]></title>
-        <id>release-1-1</id>
+        <id>https://techfolios.github.io/blog/release-1-1</id>
         <link href="https://techfolios.github.io/blog/release-1-1"/>
         <updated>2016-10-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Release 1.1 of TechFolio is now available. Enhancements include:]]></summary>
@@ -74,7 +74,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[ICS Portfolios]]></title>
-        <id>ics-portfolios</id>
+        <id>https://techfolios.github.io/blog/ics-portfolios</id>
         <link href="https://techfolios.github.io/blog/ics-portfolios"/>
         <updated>2016-10-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The TechFolio team is happy to announce the initial release of ICS Portfolios, a site providing a portal to dozens of TechFolios created by students and faculty in the Department of Information and Computer Science at the University of Hawaii.]]></summary>
@@ -87,7 +87,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Techfolios at FullStack Honolulu]]></title>
-        <id>fullstack-presentation</id>
+        <id>https://techfolios.github.io/blog/fullstack-presentation</id>
         <link href="https://techfolios.github.io/blog/fullstack-presentation"/>
         <updated>2016-09-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[TechFolios will be presented at the inaugural meeting of FullStack Honolulu on October 6, 2016. See the Facebook Event Page for details on the event time and place.]]></summary>
@@ -100,7 +100,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Initial Release]]></title>
-        <id>initial-release</id>
+        <id>https://techfolios.github.io/blog/initial-release</id>
         <link href="https://techfolios.github.io/blog/initial-release"/>
         <updated>2016-08-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[After review and lots of minor bug fixes, the TechFolio team is delighted to announce release 1.0 of TechFolio.]]></summary>
@@ -113,7 +113,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Preview Release]]></title>
-        <id>preview-release</id>
+        <id>https://techfolios.github.io/blog/preview-release</id>
         <link href="https://techfolios.github.io/blog/preview-release"/>
         <updated>2016-06-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[After just two weeks of development, the TechFolio team is delighted to announce a preview release. Please take a look and let us know what you think.]]></summary>
