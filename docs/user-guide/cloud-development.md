@@ -142,6 +142,6 @@ You will see that the result of either of those actions is to trigger a build of
 
 ![](/img/user-guide/cloud-19.png)
 
-## But I don't like the cloud!
+## But I don't like GitPod!
 
 If, for some reason, you don't want to use GitPod, the next section explains how to install and develop your portfolio locally.
