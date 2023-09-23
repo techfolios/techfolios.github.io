@@ -26,6 +26,18 @@ Click "New Workspace", then select the repo containing your professional portfol
 
 You can click the "Autostart with these options..." (or not), but then click the "Continue" button.
 
+:::tip What if I can't find my repo in the dropdown list?
+Sometimes, for reasons that elude me, GitPod will not "know" about your repo and it does not appear in the dropdown menu.  Fortunately, there is a second way to select a workspace.
+
+Go to a new browser window, then type in "gitpod.io/#" followed by your github repo url. For example:
+
+```
+gitpod.io/#https://github.com/philipmjohnson/philipmjohnson.github.io
+```
+
+When you type return, you should be taken back to that Open Workspace page, but this time your repo should appear in the window.
+:::
+
 After a few seconds, the screen will show a VS Code Editor user interface, and an open Terminal window indicating that various libraries are being installed in a green font. You'll now need to wait a minute or so for this installation process to finish. When it's finished, you'll see a Unix command prompt at the bottom of the terminal window with a blue font. For example:
 
 ![](/img/user-guide/cloud-4.png)
