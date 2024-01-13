@@ -56,6 +56,13 @@ Now click on the Settings tab near the top of the window, then Actions and Gener
 
 Check that Workflow permissions is set to "Read and write permissions". If not, click the radio button and press "Save".
 
+## Select GitHub Actions for deployment
+
+Next, click on the Pages link in the left sidebar, and make sure the "GitHub Actions" is selected as the "Source" for Build and Deployment:
+
+![](/img/quickstart/pages-build-and-deployment.png)
+
+
 ## Configure `_config.yml`
 
 Now that your repository is set up, we can start editing the template files to make this professional portfolio your own.
@@ -130,25 +137,6 @@ This is not your fault (or ours): it means that there was a network connection p
 The good news is that the files retrieved over the network for the first build are cached for the future, so it is unlikely you'll run into this particular error again upon subsequent builds of your portfolio.
 :::
 
-## Set gh\_pages
-
-The above build process has created a new branch in your repo called "gh_pages".  Now you need to tell the GitHub Pages mechanism that this is where to look for your professional portfolio files. To do this, click on the "Settings" tab, and then on the "Pages" tab. This will take you to the following page:
-
-![](/img/quickstart/pages-tab.png)
-
-Click on the button named "Branch: main", and select "gh-pages", then click "Save". The page should now look like this:
-
-![](/img/quickstart/pages-tab2.png)
-
-Now click on the "Actions" tab and you'll notice that changing the branch from main to gh-pages has resulted in a new workflow run called "pages build and deployment":
-
-![](/img/quickstart/pages-workflow-run.png)
-
-This run only took 36 seconds, so it completed by the time I switched to this tab. If you click on this workflow run, you'll see a page like this:
-
-![](/img/quickstart/pages-workflow-run2.png)
-
-As you can see, the "deploy" task provides a link to your professional portfolio.
 
 ## View your portfolio
 
