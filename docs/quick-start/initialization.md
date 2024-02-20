@@ -54,7 +54,7 @@ Now click on the Settings tab near the top of the window, then Actions and Gener
 
 ![](/img/quickstart/action-permissions.png)
 
-Check that Workflow permissions is set to "Read and write permissions". If not, click the radio button and press "Save".
+Check that Workflow permissions is set to "Read and write permissions". If not, click the radio button and press "Save". Also, make sure the box is checked for "Allow GitHub Actions to create and approve pull requests".
 
 ## Select GitHub Actions for deployment
 
@@ -121,6 +121,12 @@ There are two reasons it is useful to know how to monitor the build:
 2. Monitoring the build lets you know if any errors occurred during the build.
 
 Also, please note that the very first time you try to build your portfolio, it takes about five minutes, which is a long time!  Don't worry, though: after this very first build, GitHub will cache the build artifacts and your future builds should take less than a minute to complete.
+
+Visiting your website might display the following text for a few minutes while the page is built:
+
+```
+--- title: Home layout: home --- {% include about/about.html %} {% include projects/projects.html limit=4 %} {% include essays/essays.html limit=6 %}
+```
 :::
 
 :::warning Oh no! My very first build failed!

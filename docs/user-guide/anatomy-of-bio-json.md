@@ -193,6 +193,5 @@ Here are a few things we've discovered about bio.json while developing our portf
 
 * You cannot comment out lines in your bio.json file.  It is fine to have empty arrays, for example. But if there is actual data that you do not want displayed, then you have to delete it.
 
-* If you want to transmogrify your bio.json file into other formats, see [Hack My Resume](http://please.hackmyresume.com/).
 
 * For heaven's sake, don't end up with a portfolio like [this one](https://medium.com/@_oren/every-single-web-portfolio-site-ever-8fad53534d46#.o82m6ejrr).
